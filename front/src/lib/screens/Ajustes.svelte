@@ -13,7 +13,7 @@
     pushToast('Nome do sistema salvo.')
   }
   function changePass() {
-    if (passNew.length < 6) { pushToast('A senha deve ter no mínimo 6 caracteres.', 'err'); return }
+    if (passNew.length < 8) { pushToast('A senha deve ter no mínimo 8 caracteres.', 'err'); return }
     if (passNew !== passConf) { pushToast('As senhas não conferem.', 'err'); return }
     send({ type: 'changeOwnPassword', newPassword: passNew })
     pushToast('Senha alterada.')

@@ -706,6 +706,13 @@ function canTouchItem(user, c, itemOwnerId) {
 
 const app = express();
 app.set('trust proxy', parseInt(process.env.TRUST_PROXY || '1', 10));
+app.use((req, res, next) => {
+  res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  if (req.path.startsWith('/api/')) res.setHeader('Cache-Control', 'no-store');
+  next();
+});
 app.use(express.json());
 app.use(sessionMiddleware);
 
@@ -770,6 +777,9 @@ app.use(express.static(publicDir));
 const server = http.createServer(app);
 const io = new Server(server);
 
+const ALLOWED_ORIGINS = String(process.env.ALLOWED_ORIGINS || '')
+  .split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
+
 function currentUser(socket) {
   const u = socket && socket.data && socket.data.user;
   return u && u.active !== false ? u : null;
@@ -785,6 +795,16 @@ function broadcast() {
 io.use((socket, next) => {
   const req = socket.request;
   try {
+    const origin = req && req.headers && req.headers.origin ? String(req.headers.origin) : '';
+    if (origin) {
+      try {
+        const oh = new URL(origin).host.toLowerCase();
+        const host = req && req.headers && req.headers.host ? String(req.headers.host).toLowerCase() : '';
+        if (oh !== host && !ALLOWED_ORIGINS.includes(oh)) return next(new Error('unauthorized-origin'));
+      } catch {
+        return next(new Error('unauthorized-origin'));
+      }
+    }
     const raw = req && req.headers && req.headers.cookie;
     const cookies = raw ? cookieMod.parse(raw) : {};
     let sid = cookies[SESSION_NAME];
@@ -935,7 +955,7 @@ function apply(a, user) {
       const current = String(a.current || '');
       const next = String(a.next || '');
       if (!verifyPassword(current, user.passHash)) throw new Error('Senha atual incorreta.');
-      if (next.length < 6) throw new Error('A nova senha precisa ter ao menos 6 caracteres.');
+      if (next.length < 8) throw new Error('A nova senha precisa ter ao menos 8 caracteres.');
       user.passHash = hashPassword(next);
       saveUsers();
       break;
@@ -947,7 +967,7 @@ function apply(a, user) {
       if (usersStore.some((u) => u.username.toLowerCase() === username)) throw new Error('Este usuário já existe.');
       if (!ROLES.includes(a.role)) throw new Error('Perfil inválido.');
       const password = String(a.password || '');
-      if (password.length < 6) throw new Error('A senha precisa ter ao menos 6 caracteres.');
+      if (password.length < 8) throw new Error('A senha precisa ter ao menos 8 caracteres.');
       usersStore.push({
         id: uid(),
         username,
@@ -974,7 +994,7 @@ function apply(a, user) {
           if (target.id === user.id && !a.patch.active) throw new Error('Você não pode desativar a si mesmo.');
           target.active = a.patch.active;
         }
-        if (typeof a.patch.password === 'string' && a.patch.password.length >= 6) {
+        if (typeof a.patch.password === 'string' && a.patch.password.length >= 8) {
           target.passHash = hashPassword(a.patch.password);
         }
       }

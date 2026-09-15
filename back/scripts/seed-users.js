@@ -57,8 +57,8 @@ function uid() {
       const name = (await ask('Nome de exibição [' + username + ']: ')).trim().slice(0, 40) || username;
       const role = (await ask('Perfil (admin/gestor/jogador) [jogador]: ')).trim().toLowerCase() || 'jogador';
       if (!ROLES.includes(role)) { console.log('Perfil inválido.'); continue; }
-      const password = await ask('Senha (min 6): ');
-      if (password.length < 6) { console.log('Senha muito curta.'); continue; }
+      const password = await ask('Senha (min 8): ');
+      if (password.length < 8) { console.log('Senha muito curta.'); continue; }
       users.push({
         id: uid(),
         username,

@@ -7,7 +7,7 @@
 </div>
 
 > **Full documentation** — from the motivation to the architecture, rules, user manual and deployment.
-> Project version: **3.2.1** · Status: **in active use** ("Desajustados" campaign).
+> Project version: **3.3.0** · Status: **in active use** ("Desajustados" campaign).
 
 ---
 
@@ -421,7 +421,11 @@ Ideas spotted in the code and content folders:
 
 ## 15. Changelog (summary)
 
-- **3.2.1 (current)**
+- **3.3.0 (current)**
+  - **Security P1**: security headers (X-Frame-Options DENY, X-Content-Type-Options nosniff, Referrer-Policy, Cache-Control no-store on `/api` routes) and `Origin` validation on the Socket.IO handshake (same-origin; optional allowlist via `ALLOWED_ORIGINS`).
+  - **Anti-loss P2**: `back/scripts/backup-data.sh` snapshots the container's `/data` into timestamped archives (keeps the 10 most recent) and runs automatically before every deploy rebuild.
+  - **8-character minimum password** everywhere (server + frontend + seed).
+- **3.2.1**
   - **Security P0**: persistent sessions in `sessions.json` (no longer logs everyone out on deploys), automatic `Secure` cookie flag behind the Funnel (`trust proxy`), session-ID regeneration on login (anti-fixation) and login rate limit (5 attempts/15 min per IP+user).
   - Synchronous flush of `data.json`/`users.json`/`sessions.json` on shutdown (SIGTERM/SIGINT).
 - **3.2.0**

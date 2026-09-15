@@ -7,7 +7,7 @@
 </div>
 
 > **Documentação completa** — do motivo à arquitetura, regras, manual e deploy.
-> Versão do projeto: **3.2.1** · Status: **em uso ativo** (mesa "Desajustados").
+> Versão do projeto: **3.3.0** · Status: **em uso ativo** (mesa "Desajustados").
 
 ---
 
@@ -421,7 +421,11 @@ Ideias detectadas no código e nas pastas de conteúdo:
 
 ## 15. Changelog (resumo)
 
-- **3.2.1 (atual)**
+- **3.3.0 (atual)**
+  - **Segurança P1**: headers de segurança (X-Frame-Options DENY, X-Content-Type-Options nosniff, Referrer-Policy, Cache-Control no-store nas rotas `/api`) e validação de `Origin` no handshake do Socket.IO (mesmo-origem; allowlist opcional via `ALLOWED_ORIGINS`).
+  - **Anti-perda P2**: script `back/scripts/backup-data.sh` que tira snapshot datado do `/data` do container (mantém os 10 mais recentes) e roda automaticamente antes de cada rebuild no deploy.
+  - **Senha mínima 8 caracteres** em todos os cadastros/edições (servidor + frontend + seed).
+- **3.2.1**
   - **Segurança P0**: sessões persistentes em `sessions.json` (não desloga usuários em deploys), cookie com flag `Secure` automática atrás do Funnel (`trust proxy`), regeneração do ID de sessão no login (anti-fixação) e rate limit de login (5 tentativas/15 min por IP+usuário).
   - Flush síncrono de `data.json`/`users.json`/`sessions.json` no encerramento (SIGTERM/SIGINT).
 - **3.2.0**

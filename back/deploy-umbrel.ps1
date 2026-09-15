@@ -28,6 +28,7 @@ $files = @(
     @{ local = "$LOCAL_ROOT\umbrel\setup-umbrel.sh"; remote = "$REMOTE_DIR/umbrel/setup-umbrel.sh" },
     @{ local = "$LOCAL_ROOT\docker-compose.yml";   remote = "$REMOTE_DIR/docker-compose.yml" },
     @{ local = "$LOCAL_ROOT\scripts\seed-users.js"; remote = "$REMOTE_DIR/scripts/seed-users.js" },
+    @{ local = "$LOCAL_ROOT\scripts\backup-data.sh"; remote = "$REMOTE_DIR/scripts/backup-data.sh" },
     @{ local = "$LOCAL_ROOT\package.json";         remote = "$REMOTE_DIR/package.json" }
 )
 
@@ -55,6 +56,9 @@ Write-Host "=== Proximos passos ==="
 # Check if .env already exists remotely
 $hasEnv = ssh $UMBREL_HOST "test -f $REMOTE_DIR/.env && echo yes || echo no"
 if ($hasEnv -eq "yes") {
+    Write-Host ""
+    Write-Host "Backup dos dados antes do rebuild..."
+    ssh $UMBREL_HOST "bash $REMOTE_DIR/scripts/backup-data.sh || echo 'AVISO: backup falhou (container parado?)'"
     Write-Host ""
     Write-Host "Arquivos enviados. Reconstruindo container..."
     ssh $UMBREL_HOST "cd $REMOTE_DIR && docker compose build && docker compose up -d --force-recreate"

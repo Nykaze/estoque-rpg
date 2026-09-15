@@ -41,8 +41,8 @@
       pushToast('Usuário inválido (3-24 letras/números, sem espaços).', 'err')
       return
     }
-    if (form.password.length < 6) {
-      pushToast('A senha deve ter no mínimo 6 caracteres.', 'err')
+    if (form.password.length < 8) {
+      pushToast('A senha deve ter no mínimo 8 caracteres.', 'err')
       return
     }
     send({ type: 'createUser', username, name: form.name.trim() || username, role: form.role, password: form.password })
@@ -52,7 +52,7 @@
 
   function submitEdit() {
     const patch: Record<string, any> = { name: editName.trim(), role: editRole, active: editActive }
-    if (editPass.length >= 6) patch.password = editPass
+    if (editPass.length >= 8) patch.password = editPass
     send({ type: 'updateUser', userId: editing.id, patch })
     pushToast('Usuário atualizado.')
     mode = null
@@ -129,7 +129,7 @@
         </select>
       </label>
       <label class="field">Senha <span class="req">*</span>
-        <input type="password" bind:value={form.password} placeholder="Mínimo 6 caracteres" />
+        <input type="password" bind:value={form.password} placeholder="Mínimo 8 caracteres" />
       </label>
       <div class="modal-foot">
         <button type="button" class="btn" onclick={() => (mode = null)}>Cancelar</button>
@@ -157,7 +157,7 @@
         <input type="checkbox" bind:checked={editActive} /> Conta ativa
       </label>
       <label class="field">Nova senha <span class="hint">(deixe em branco para manter)</span>
-        <input type="password" bind:value={editPass} placeholder="Mínimo 6 caracteres" />
+        <input type="password" bind:value={editPass} placeholder="Mínimo 8 caracteres" />
       </label>
       <div class="modal-foot">
         <button type="button" class="btn" onclick={() => (mode = null)}>Cancelar</button>
