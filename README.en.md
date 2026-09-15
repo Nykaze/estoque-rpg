@@ -7,7 +7,7 @@
 </div>
 
 > **Full documentation** — from the motivation to the architecture, rules, user manual and deployment.
-> Project version: **3.2.0** · Status: **in active use** ("Desajustados" campaign).
+> Project version: **3.2.1** · Status: **in active use** ("Desajustados" campaign).
 
 ---
 
@@ -421,7 +421,10 @@ Ideas spotted in the code and content folders:
 
 ## 15. Changelog (summary)
 
-- **3.2.0 (current)**
+- **3.2.1 (current)**
+  - **Security P0**: persistent sessions in `sessions.json` (no longer logs everyone out on deploys), automatic `Secure` cookie flag behind the Funnel (`trust proxy`), session-ID regeneration on login (anti-fixation) and login rate limit (5 attempts/15 min per IP+user).
+  - Synchronous flush of `data.json`/`users.json`/`sessions.json` on shutdown (SIGTERM/SIGINT).
+- **3.2.0**
   - **Monster Sheets**: new per-table tab (managers only) — full sheet reused, challenge/type/habitat up top, and the server filters monster sheets/movements for players.
   - **Star-rated accessories**: optional per-table system (`equipStars`) with 3 slots and a star-sum cap.
   - **Notes autosave**: ≈500ms debounce and immediate save when leaving the field.

@@ -1,6 +1,6 @@
 {
   "name": "estoque-rpg",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "private": true,
   "description": "Controle de inventário e fichas para RPG em rede local",
   "main": "server.js",

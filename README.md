@@ -15,4 +15,4 @@ Pick your language:
 
 ---
 
-*Estoque RPG · v3.2.0*
+*Estoque RPG · v3.2.1*

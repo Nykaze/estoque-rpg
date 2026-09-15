@@ -7,6 +7,7 @@ const env = {
   PORT: '3001',
   DATA_FILE: path.join(__dirname, 'fixtures', 'data.json'),
   USERS_FILE: path.join(__dirname, 'fixtures', 'users.json'),
+  SESSIONS_FILE: path.join(root, 'data', 'sessions.dev.json'),
 };
 
 const child = spawn(process.execPath, [path.join(root, 'server.js')], {

@@ -11,6 +11,7 @@ const cookieMod = require('cookie');
 
 const DATA_FILE = process.env.DATA_FILE || path.join(__dirname, 'data', 'data.json');
 const USERS_FILE = process.env.USERS_FILE || path.join(__dirname, 'data', 'users.json');
+const SESSIONS_FILE = process.env.SESSIONS_FILE || path.join(path.dirname(DATA_FILE), 'sessions.json');
 const PORT = process.env.PORT || 3000;
 const SESSION_NAME = 'estoque.sid';
 const DEFAULT_PUBLIC_DIR = () => (fs.existsSync(path.join(__dirname, 'public')) ? path.join(__dirname, 'public') : path.join(__dirname, '..', 'public'));
@@ -478,14 +479,88 @@ function migrateOwnership() {
 migrateOwnership();
 
 // ---- sessão HTTP (aplicada após a criação do app, mais abaixo) ----
-const sessionStore = new session.MemoryStore();
+// Store persistente em disco: sobrevive a restarts/deploys (não desloga usuários)
+class FileSessionStore extends session.Store {
+  constructor(file) {
+    super();
+    this.file = file;
+    this.sessions = new Map();
+    this.timer = null;
+    try {
+      const raw = JSON.parse(fs.readFileSync(file, 'utf8'));
+      if (raw && typeof raw === 'object') for (const [sid, s] of Object.entries(raw)) this.sessions.set(sid, s);
+    } catch { /* primeiro uso: arquivo ainda não existe */ }
+    setInterval(() => this.prune(), 60 * 60 * 1000).unref();
+  }
+  _expired(s) {
+    const exp = s && s.cookie && s.cookie.expires;
+    if (!exp) return false;
+    const t = exp instanceof Date ? exp.getTime() : Date.parse(exp);
+    return !isNaN(t) && t <= Date.now();
+  }
+  get(sid, cb) {
+    const s = this.sessions.get(sid);
+    if (!s) return cb(null, null);
+    if (this._expired(s)) {
+      this.sessions.delete(sid);
+      this.scheduleSave();
+      return cb(null, null);
+    }
+    cb(null, JSON.parse(JSON.stringify(s)));
+  }
+  set(sid, sess, cb) {
+    this.sessions.set(sid, JSON.parse(JSON.stringify(sess)));
+    this.scheduleSave();
+    if (cb) cb(null);
+  }
+  touch(sid, sess, cb) { this.set(sid, sess, cb); }
+  destroy(sid, cb) {
+    this.sessions.delete(sid);
+    this.scheduleSave();
+    if (cb) cb(null);
+  }
+  prune() {
+    let changed = false;
+    for (const [sid, s] of this.sessions) {
+      if (this._expired(s)) { this.sessions.delete(sid); changed = true; }
+    }
+    if (changed) this.scheduleSave();
+  }
+  scheduleSave() {
+    clearTimeout(this.timer);
+    this.timer = setTimeout(() => this.persistNow(), 300);
+  }
+  persistNow() {
+    const out = {};
+    for (const [sid, s] of this.sessions) out[sid] = s;
+    const tmp = this.file + '.tmp';
+    fs.writeFile(tmp, JSON.stringify(out, null, 2), (err) => {
+      if (err) return console.error('Erro ao salvar sessions.json:', err.message);
+      fs.rename(tmp, this.file, (err2) => { if (err2) console.error('Erro ao salvar sessions.json:', err2.message); });
+    });
+  }
+  persistNowSync() {
+    if (this.timer) { clearTimeout(this.timer); this.timer = null; }
+    const out = {};
+    for (const [sid, s] of this.sessions) out[sid] = s;
+    const tmp = this.file + '.tmp';
+    try {
+      fs.writeFileSync(tmp, JSON.stringify(out, null, 2));
+      fs.renameSync(tmp, this.file);
+    } catch (err) {
+      console.error('Erro ao salvar sessions.json:', err.message);
+    }
+  }
+}
+
+const sessionStore = new FileSessionStore(SESSIONS_FILE);
 const sessionMiddleware = session({
   name: SESSION_NAME,
   secret: sessionSecret,
   store: sessionStore,
   resave: false,
   saveUninitialized: false,
-  cookie: { httpOnly: true, sameSite: 'lax', secure: false, maxAge: 7 * 24 * 60 * 60 * 1000 }
+  cookie: { httpOnly: true, sameSite: 'lax', secure: 'auto', maxAge: 7 * 24 * 60 * 60 * 1000 }
 });
 
 function stateFor(user) {
@@ -630,19 +705,51 @@ function canTouchItem(user, c, itemOwnerId) {
 }
 
 const app = express();
+app.set('trust proxy', parseInt(process.env.TRUST_PROXY || '1', 10));
 app.use(express.json());
 app.use(sessionMiddleware);
 
+// ---- rate limit de login (por IP + usuário, em memória) ----
+const LOGIN_MAX_ATTEMPTS = 5;
+const LOGIN_WINDOW_MS = 15 * 60 * 1000;
+const loginAttempts = new Map();
+function loginLockRemaining(req) {
+  const now = Date.now();
+  if (loginAttempts.size > 5000) {
+    for (const [k, v] of loginAttempts) if (v.until <= now) loginAttempts.delete(k);
+  }
+  const key = req.ip + '|' + String((req.body && req.body.username) || '').trim().toLowerCase();
+  const rec = loginAttempts.get(key);
+  return rec && rec.until > now ? rec.until : 0;
+}
+
 // ---- rotas de autenticação HTTP ----
 app.post('/api/login', (req, res) => {
+  const until = loginLockRemaining(req);
+  if (until) {
+    const secs = Math.max(1, Math.ceil((until - Date.now()) / 1000));
+    return res.status(429).json({ error: `Muitas tentativas. Tente novamente em ${secs}s.` });
+  }
   const username = String((req.body && req.body.username) || '').trim().toLowerCase();
   const password = String((req.body && req.body.password) || '');
   const user = findUserByUsername(username);
   if (!user || user.active === false || !verifyPassword(password, user.passHash)) {
+    const key = req.ip + '|' + username;
+    const rec = loginAttempts.get(key) || { count: 0, until: 0 };
+    rec.count += 1;
+    if (rec.count >= LOGIN_MAX_ATTEMPTS) {
+      rec.until = Date.now() + LOGIN_WINDOW_MS;
+      rec.count = 0;
+    }
+    loginAttempts.set(key, rec);
     return res.status(401).json({ error: 'Usuário ou senha inválidos.' });
   }
-  req.session.userId = user.id;
-  res.json({ ok: true, user: sanitizeUser(user) });
+  loginAttempts.delete(req.ip + '|' + username);
+  req.session.regenerate((err) => {
+    if (err) return res.status(500).json({ error: 'Erro interno ao iniciar sessão.' });
+    req.session.userId = user.id;
+    res.json({ ok: true, user: sanitizeUser(user) });
+  });
 });
 
 app.post('/api/logout', (req, res) => {
@@ -1576,6 +1683,27 @@ function equipmentStarsOf(r, c, equipment) {
     total += normalizeStars(cat.stars);
   }
   return total;
+}
+
+// ---- no encerramento (docker stop = SIGTERM, Ctrl+C = SIGINT): grava no disco ----
+function flushOnShutdown() {
+  if (sessionStore && typeof sessionStore.persistNowSync === 'function') sessionStore.persistNowSync();
+  try {
+    fs.writeFileSync(DATA_FILE, JSON.stringify(state, null, 2));
+  } catch (err) {
+    console.error('Erro ao salvar data.json no encerramento:', err.message);
+  }
+  try {
+    fs.writeFileSync(USERS_FILE, JSON.stringify({ secret: sessionSecret, users: usersStore }, null, 2));
+  } catch (err) {
+    console.error('Erro ao salvar users.json no encerramento:', err.message);
+  }
+}
+for (const sig of ['SIGTERM', 'SIGINT']) {
+  process.on(sig, () => {
+    try { flushOnShutdown(); } catch (e) { console.error('Erro no flush de encerramento:', e.message); }
+    process.exit(0);
+  });
 }
 
 server.listen(PORT, () => {

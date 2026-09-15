@@ -7,7 +7,7 @@
 </div>
 
 > **Documentação completa** — do motivo à arquitetura, regras, manual e deploy.
-> Versão do projeto: **3.2.0** · Status: **em uso ativo** (mesa "Desajustados").
+> Versão do projeto: **3.2.1** · Status: **em uso ativo** (mesa "Desajustados").
 
 ---
 
@@ -421,7 +421,10 @@ Ideias detectadas no código e nas pastas de conteúdo:
 
 ## 15. Changelog (resumo)
 
-- **3.2.0 (atual)**
+- **3.2.1 (atual)**
+  - **Segurança P0**: sessões persistentes em `sessions.json` (não desloga usuários em deploys), cookie com flag `Secure` automática atrás do Funnel (`trust proxy`), regeneração do ID de sessão no login (anti-fixação) e rate limit de login (5 tentativas/15 min por IP+usuário).
+  - Flush síncrono de `data.json`/`users.json`/`sessions.json` no encerramento (SIGTERM/SIGINT).
+- **3.2.0**
   - **Fichas de Monstros**: nova aba por mesa (só gestores) — ficha completa reutilizada, desafio/tipo/habitat no topo, e servidor filtra fichas/movimentações de monstros para jogadores.
   - **Acessórios com estrelas**: sistema opcional por mesa (`equipStars`) com 3 slots e limite de somatório de estrelas.
   - **Anotações com autosave**: debounce de ~500ms e salvamento imediato ao sair da caixa.
