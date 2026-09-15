@@ -97,7 +97,9 @@ async function waitUp() {
     console.error('ERRO TESTE:', e.message);
   } finally {
     child.kill();
-    fs.rmSync(DIR, { recursive: true, force: true });
+    if (child.exitCode === null) await new Promise((r) => child.once('exit', r));
+    await sleep(400);
+    fs.rmSync(DIR, { recursive: true, force: true, maxRetries: 4, retryDelay: 100 });
     process.exit(pass ? 0 : 1);
   }
 })();
