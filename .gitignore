@@ -46,3 +46,5 @@ Desktop.ini
 
 # Config pessoal do autor
 .wezterm.lua
+# Proposta Django (estudo local) - NAO publicar
+django-proposta.md
