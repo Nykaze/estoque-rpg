@@ -1,0 +1,32 @@
+services:
+  estoque-rpg:
+    build:
+      context: .
+      dockerfile: umbrel/Containerfile
+    container_name: estoque-rpg
+    hostname: estoque-rpg
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    volumes:
+      - tailscale-state:/var/lib/tailscale
+      - app-data:/data
+      - ./public:/app/public
+      - ./data:/app/data
+    ports:
+      - "3000:3000"
+    environment:
+      - TS_AUTHKEY=${TS_AUTHKEY}
+      - TS_HOSTNAME=estoque-rpg
+      - TS_FUNNEL=true
+      - PORT=3000
+      - DATA_FILE=/data/data.json
+      - USERS_FILE=/data/users.json
+      - RUNAS_FILE=/data/runas.json
+
+volumes:
+  tailscale-state:
+  app-data:

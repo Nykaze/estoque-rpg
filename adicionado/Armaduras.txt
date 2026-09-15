@@ -1,0 +1,139 @@
+ARMADURA LEVE
+Roupão de Mago
+Defesa	+1d3
+
+-- 1 of 21 --
+
+ARMADURA LEVE
+Roupas de explorador
+Defesa	+1d3
+
+-- 2 of 21 --
+
+ARMADURA LEVE
+Roupão Verdario
+Defesa	+1d3
+
+-- 3 of 21 --
+
+ARMADURA LEVE
+Armadura Coberta
+Defesa	+1d5
+
+-- 4 of 21 --
+
+ARMADURA LEVE
+Armadura Akrina
+Defesa	+1d4
+
+-- 5 of 21 --
+
+ARMADURA LEVE
+Armadura do
+pequeno manto
+Defesa	+1d2
+
+-- 6 of 21 --
+
+ARMADURA LEVE
+Armadura de
+PlamidiaDefesa	+1d5
+
+-- 7 of 21 --
+
+ARMADURA
+MEDIAArmadura de Couro
+Defesa+1d10
+
+-- 8 of 21 --
+
+ARMADURA
+MEDIA
+Armadura só de
+CouroDefesa+1d14-1 em desvio
+
+-- 9 of 21 --
+
+ARMADURA
+MEDIA	Armadura do Ganbino
+Defesa	+1d8
+
+-- 10 of 21 --
+
+ARMADURA
+MEDIA
+Armadura do
+combatente
+Defesa+1d12-1 em desvio
+
+-- 11 of 21 --
+
+ARMADURA
+MEDIA
+Armadura do
+Guarda iniciante
+Defesa+1d15-1 em desvio
+
+-- 12 of 21 --
+
+ARMADURA
+MEDIA
+Roupa do	
+EsforçadoDefesa	+1d7
+
+-- 13 of 21 --
+
+ARMADURA
+MEDIA
+Roupa de Bladd
+Defesa+1d15-1 em desvio
+
+-- 14 of 21 --
+
+ARMADURA
+PESADA
+Armadura da Legião
+Defesa+1d18-2 em desvio
+
+-- 15 of 21 --
+
+ARMADURA
+PESADA
+Armadura de Placa
+Defesa+1d25-3 em desvio
+
+-- 16 of 21 --
+
+ARMADURA
+PESADAArmadura de Carmin
+Defesa+1d26-3 em desvio
+
+-- 17 of 21 --
+
+ARMADURA
+PESADAArmadura de escama
+Defesa+1d28-3 em desvio
+
+-- 18 of 21 --
+
+ARMADURA
+PESADA
+Armadura do
+Capitão	Defesa+1d20-2 em desvio
+
+-- 19 of 21 --
+
+ARMADURA
+PESADA
+Placa de Aço
+AlbinoDefesa+1d28-3 em desvio
+
+-- 20 of 21 --
+
+ARMADURA
+PESADA
+Armadura de
+KiniteDefesa+1d24-2 em desvio
+
+-- 21 of 21 --
+

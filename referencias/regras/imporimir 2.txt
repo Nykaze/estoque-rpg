@@ -1,0 +1,103 @@
+Pedra“Rocha”
+Peso: 3	Valor: 4 Reil
+Efeito
+Ela é uma Pedra.
+Ferro
+“Um Minério raro usado para forjar
+equipamentos para os experiente em
+batalha”
+Peso: 4	Valor: 20 Reil
+EfeitoUm Minério.
+Poção Vermel
+“Um liquido avermelhado que quando	
+ingerido restaura as feridas e alivia as
+dores”
+Peso: 2	Valor: 12 Reil
+Efeito
+Recupera +7 de VIDA
+Poção Azure
+“Uma bebida suspeitamente azul brilhante,	
+bebe-la irá restaurar suas capacidades de	
+pensamento e melhorar seu estado mental”
+Peso: 2	Valor: 15 Reil
+Efeito
+Recupera +10 de MANA
+Poção Amarel
+“Sua essência de cor amarelada afasta as	
+pessoas, mais curiosos o bastante para	
+bebe-la irá se sentir mais leves e rapidos”
+Peso: 3	Valor: 20 Reil
+Efeito
++1 Ação de movimento ( 3 turnos )
++1 em Desvio ( 3 turnos )
+Erva Verde
+“Suas Folhas ao serem ingeridas revigoram
+o corpo trazendo um alivio momentâneo”
+Peso: 1	Valor: 3 Reil
+Efeito
+Recupera +3 de ESFORÇO
+Erva Blueice
+“Suas Folhas ao serem ingeridas revigoram
+a Mente tirando suas dores de cabeça e	
+elevando sua mana por um momento”
+Peso: 1	Valor: 4 Reil
+Efeito
+Recupera +3 de MANA
+Erva Vermel
+“Suas Folhas ao serem ingeridas revigoram
+você por inteiro, aliviando as dores do
+corpo e ajuda a fechar feridas”
+Peso: 1	Valor: 5 Reil
+Efeito
+Recupera +3 de VIDA
+Cobre
+“Um Minério comum usado para forjar	
+equipamentos para os experiente em
+batalha”
+Peso: 5	Valor: 20 Reil
+Efeito
+Outro Minério.
+
+-- 1 of 4 --
+
+Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy	Dice Guildy
+
+-- 2 of 4 --
+
+Anel do Sabia da Mana
+“Forjado por um velho, ele tem Mana
+imbuída em seu material de criação, quem
+usa diz sentir a mana do corpo com mais
+facilidade”
+Peso: 2
+Valor: 35 Reil
+Efeito
++5 de Mana
+Anel do Cavaleiro
+“Anel usado por cavaleiro que vigiam
+castelos, deve-se orgulhar por usar um
+desse pois isso implica que você foi
+reconhecido como cavaleiro por um rei”
+Peso: 2
+Valor: 40 Reil
+Efeito
+Escudos tem +3 de defesa.
+Colar da boa sorte
+“Um colar feito a mão com um raro trevo de
+4 folhas, dizem que quem usa é abençoado
+com muita sorte”
+Peso: 1
+Valor: 15 Reil
+Efeito
++1 em Sorte, +Um Efeito de salvação
+
+-- 3 of 4 --
+
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+
+-- 4 of 4 --
+

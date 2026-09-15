@@ -1,0 +1,447 @@
+Água +	Água
+ +
+Água +
+ 
+Fogo	Fogo	Fogo
+Ao acertar um alvo	Ao acertar u
+m alvo
+“Queimando“	“Que
+im
+ando
+“, cria	, cria Vapor	Vapor
+que da 2 de dano em 4x4	que da
+ 2 de dano e
+m 4x4
+do alvo.	do alvo.
+Ao acertar um alvo
+“Queimando“
+, cria
+ Vapor
+que da 2 de dano em 4x4
+do alvo.
+Água +	Água
+ +
+Água +
+ 
+Gelo	Gelo	Gelo
+Ao acertar um alvo	Ao acertar u
+m alvo
+Molhado	Molhado
+ o deixe com	o de
+ixe co
+m
+Calafrio	Calafr
+io, -5 na defesa por	, -5 na defesa por
+2 turnos ( não acumula )	2 turnos
+ ( não acu
+mula
+ )
+Ao acertar um alvo
+Molhado
+ o deixe com
+Calafrio
+, -5 na defesa por
+2 turnos ( não acumula )
+Água +	Água
+ +
+Água +
+ 
+Raio	Ra
+io
+Raio
+Acertar um alvo “	Acertar u
+m alvo
+ “
+Molhado	Molhado
+ “ Paralisa na	“ Paral
+isa na
+hora mas apenas por 1	hora
+ mas apenas por
+ 1
+golpe.	golpe.
+Acertar um alvo “
+Molhado
+ “ Paralisa na
+hora mas apenas por 1
+golpe.
+Vento +	Vento
+ +
+Vento +
+Água	Água	Água
+Ao acertar um alvo	Ao acertar u
+m alvo
+“Molhado”	“Molhado
+”, o efeito se	, o efe
+ito se
+espalha em 3x3 do alvo	espalha e
+m 3x3 do alvo
+por 2 turnos	por
+ 2 turnos
+Ao acertar um alvo
+“Molhado”
+, o efeito se
+espalha em 3x3 do alvo
+por 2 turnos
+Madeira +	Made
+ira +
+Madeira +
+ 
+Água	Água	Água
+Ao acertar Alvos	Ao acertar Alvos
+“Molhados”	“Molhados
+”, Lhe cura 2	, Lhe cura
+ 2
+de vida, e remove o	de v
+ida
+, e re
+move o
+efeito.	efe
+ito.
+Ao acertar Alvos
+“Molhados”
+, Lhe cura 2
+de vida, e remove o
+efeito.
+Água +	Água
+ +
+Água +
+ 
+Terra	Terra	Terra
+Ao acertar um alvo	Ao acertar u
+m alvo
+“Molhado”	“Molhado
+”, envolve ele	, envolve ele
+de lama, -2 em desvio,	de la
+ma, -2 em desv
+io,
+Até 1 golpe.	Até
+ 1 golpe.
+Ao acertar um alvo
+“Molhado”
+, envolve ele
+de lama, -2 em desvio,
+Até 1 golpe.
+Acertar um alvo “	Acertar u
+m alvo
+ “
+Gelado “ facilita a	Gelado
+ “ fac
+ilita a
+paralisia ( +13 )	paral
+isia ( +13
+ )
+Acertar um alvo “	
+Gelado “ facilita a
+paralisia ( +13 )
+Raio +	Ra
+io +
+Raio +
+ 
+Gelo	Gelo	Gelo
+Tira o efeito “	Tira o efe
+ito “ Gelado	Gelado
+ ““
+ao acertar e tira	ao acertar e t
+ira
+permanente -1 de defesa	per
+manente
+ -1 de defesa
+( -5 Max )	( -5 Max
+ )
+Tira o efeito “
+ Gelado
+ “
+ao acertar e tira
+permanente -1 de defesa
+( -5 Max )
+Fogo	Fogo	Fogo
+Gelo +	Gelo
+ +
+Gelo +
+Vento +	Vento
+ 
++
+Vento +
+ 
+Gelo	Gelo	Gelo
+Ao acertar um alvo	Ao acertar u
+m alvo
+Gelado	Gelado
+, o Efeito se	, o Efe
+ito se
+espalha em 3x3 do alvo,	espalha e
+m 3x3 do alvo
+,
+por 2 turnos.	por
+ 2 turnos.
+Ao acertar um alvo	
+Gelado
+, o Efeito se
+espalha em 3x3 do alvo,
+por 2 turnos.
+Madeira +	Made
+ira +
+Madeira +
+ 
+Gelo	Gelo	Gelo
+Ao acertar Alvos	Ao acertar Alvos
+“Gelados”	“Gelados
+”, dá 3 de dano	, dá
+ 3 de dano
+na defesa, e remove o	na defesa
+, e re
+move o
+efeito.	efe
+ito.
+Ao acertar Alvos
+“Gelados”
+, dá 3 de dano
+na defesa, e remove o
+efeito.
+Paralisar um alvo	Paral
+isar u
+m alvo
+““Queimando”	Que
+im
+ando
+”, faz ele	, faz ele
+levar 3 de dano ao	levar
+ 3 de dano ao
+invez de paralisar.	invez de paral
+isar.
+Paralisar um alvo
+“Queimando”
+, faz ele
+levar 3 de dano ao	
+invez de paralisar.	
+Raio +	Ra
+io +
+Raio +
+ 
+Fogo	Fogo	Fogo
+Raio	Ra
+io
+Raio
+Madeira +	Made
+ira +
+Madeira +
+Ao acertar Alvos	Ao acertar Alvos
+”Paralisados”	”Paral
+isados
+”, dá 2 de	, dá
+ 2 de
+dano na defesa, e	dano na defesa
+, e
+remove o efeito.	remove o efe
+ito.
+Ao acertar Alvos
+”Paralisados”
+, dá 2 de
+dano na defesa, e	
+remove o efeito.
+Vento +	Vento
+ +
+Vento +
+ Raio	Ra
+io
+Raio
+Roube a	Roube a
+ Paralisia	Paral
+isia de	de
+um alvo para	um alvo para
+potencializar sua	potenc
+ializar sua
+magia de vento ( +1,	mag
+ia de vento
+ ( +1,
+max +4 )	max
+ +4
+ )
+Roube a
+ Paralisia
+ de
+um alvo para
+potencializar sua
+magia de vento ( +1,
+max +4 )
+Terra +	Terra
+ +
+Terra +
+ Raio	Ra
+io
+Raio
+Ao acertar um alvo	Ao acertar u
+m alvo
+“Paralisado”	“Paral
+isado
+” gire um	gire u
+m
+1d20, se tirar +15 a	1d20,
+ se t
+irar
+ +15
+ a
+paralisia se espalha em	paral
+isia se espalha e
+m
+3x3	3x3..
+Ao acertar um alvo	
+“Paralisado”
+ gire um
+1d20, se tirar +15 a
+paralisia se espalha em
+3x3
+.
+Vento +	Vento
+ 
++
+Vento +
+ 
+Fogo	Fogo	Fogo
+Ao acertar um alvo	Ao acertar u
+m alvo
+Queimando	Que
+im
+ando
+, espalha a	, espalha a
+queima para aliados	que
+im
+a para al
+iados
+próximos ( até 3 ).	próx
+im
+os
+ ( até
+ 3 ).
+Ao acertar um alvo
+Queimando
+, espalha a
+queima para aliados
+próximos ( até 3 ).
+Madeira +	Made
+ira +
+Madeira +
+ Fogo	Fogo	Fogo
+Ao acertar um alvo	Ao acertar u
+m alvo
+Queimando	Que
+im
+ando
+, aumenta a	, au
+menta a
+queimadura para 3 de	que
+im
+adura para
+ 3 de
+dano p/turno	dano p
+/turno
+Ao acertar um alvo
+Queimando
+, aumenta a
+queimadura para 3 de
+dano p/turno
+Terra +	Terra
+ +
+Terra +
+ Fogo	Fogo	Fogo
+Acertar um Alvo	Acertar u
+m Alvo
+“Queimando”	“Que
+im
+ando
+”, faz o fogo	, faz o fogo
+explodir dando 4 de	explod
+ir dando
+ 4 de
+dano na hora.	dano na hora.
+Acertar um Alvo
+“Queimando”
+, faz o fogo
+explodir dando 4 de
+dano na hora.
+Terra +	Terra
+ +
+Terra +
+ 
+Madeira	Made
+ira
+Madeira
+Dá +6 de vida a magias	Dá
+ +6
+ de v
+ida a
+ mag
+ias
+defensivas, mas leva o	defens
+ivas
+, mas leva o
+dobro de dano de	dobro de dano de
+magias de	mag
+ias de
+ fogo	fogo
+..
+Dá +6 de vida a magias	
+defensivas, mas leva o
+dobro de dano de
+magias de
+ fogo
+.
+Vento +	Vento
+ 
++
+Vento +
+ 
+Madeira	Made
+ira
+Madeira
+Ao acertar um o alvo	Ao acertar u
+m o alvo
+ ““
+Sangrando ”	Sangrando
+ ” as	as Farpas	Farpas
+potencializam o	potenc
+ializa
+m o
+sangue ( +3 acumulo )	sangue
+ ( +3
+ acu
+mulo
+ )
+Ao acertar um o alvo
+ “
+Sangrando ”
+ as Farpas
+potencializam o
+sangue ( +3 acumulo )
+Terra +	Terra
+ +
+Terra +
+ Vento	Vento	Vento
+Ao ter uma magia	Ao ter u
+ma mag
+ia
+defensiva de terra ativada	defens
+iva de terra at
+ivada
+e usar uma magia de	e usar u
+ma mag
+ia de
+vento, o pó de terra irá	vento
+, o pó de terra
+ irá
+potencializar a magia de	potenc
+ializar a
+ mag
+ia de
+vento ( -2 em desvio ).	vento
+ ( -2 em desv
+io ).
+Ao ter uma magia
+defensiva de terra ativada
+e usar uma magia de
+vento, o pó de terra irá	
+potencializar a magia de
+vento ( -2 em desvio ).
+
+-- 1 of 1 --
+

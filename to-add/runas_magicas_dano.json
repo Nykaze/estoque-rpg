@@ -1,0 +1,122 @@
+{
+  "circulo_primal": [
+    {
+      "nome": "Runa de Fogo",
+      "dano": "1d3",
+      "mana": 2,
+      "conjuracao": "2 turnos"
+    },
+    {
+      "nome": "Runa de Gelo",
+      "dano": "1d4",
+      "mana": 3,
+      "conjuracao": "2 turnos"
+    },
+    {
+      "nome": "Runa de Raio",
+      "dano": "1d2",
+      "mana": 2,
+      "conjuracao": "1 turno"
+    }
+  ],
+  "circulo_semi_principal": [
+    {
+      "nome": "Runa de Madeira",
+      "dano": "1d4",
+      "mana": 3,
+      "conjuracao": "3 turnos"
+    },
+    {
+      "nome": "Runa de Água",
+      "dano": "1d3",
+      "mana": 3,
+      "conjuracao": "1 turno"
+    },
+    {
+      "nome": "Runa de Terra",
+      "dano": "1d5",
+      "mana": 4,
+      "conjuracao": "3 turnos"
+    },
+    {
+      "nome": "Runa de Vento",
+      "dano": "1d2",
+      "mana": 2,
+      "conjuracao": "2 turnos"
+    }
+  ],
+  "primeiro_semi_circulo": [
+    {
+      "nome": "Runa de Bola",
+      "dano_mod": "+3",
+      "mana_mod": "+2",
+      "conjuracao_mod": "+1",
+      "efeito": "Crie uma bola (4Q)"
+    },
+    {
+      "nome": "Runa de Área",
+      "dano_mod": "+1",
+      "mana_mod": "+1",
+      "conjuracao_mod": "+2",
+      "efeito": "Crie uma Área (3x3) até 5Q de distância de você"
+    },
+    {
+      "nome": "Runa de Onda",
+      "dano_mod": "-1",
+      "mana_mod": "+2",
+      "conjuracao_mod": "+2",
+      "efeito": "Acerte todos a sua volta (4x4)"
+    },
+    {
+      "nome": "Runa de Pilar",
+      "dano_mod": "+2",
+      "mana_mod": "+1",
+      "conjuracao_mod": "+1",
+      "efeito": "Escolha um local parado (até 6Q) e crie um pilar"
+    },
+    {
+      "nome": "Runa de Feixe",
+      "dano_mod": "+2",
+      "mana_mod": "+2",
+      "conjuracao_mod": "+1",
+      "efeito": "Dispare um feixe (7Q)"
+    }
+  ],
+  "segundo_semi_circulo": [
+    {
+      "nome": "Runa de Ponto",
+      "dano_mod": "+2",
+      "mana_mod": "+3",
+      "conjuracao_mod": "+2",
+      "efeito": "Escolha um local da onde irá sair a magia (6Q)"
+    },
+    {
+      "nome": "Runa de Espinho",
+      "dano_mod": "+2",
+      "mana_mod": "+3",
+      "conjuracao_mod": "+1",
+      "efeito": "Escolha um local sem movimento (4Q) ou dispare no alvo (7Q)"
+    },
+    {
+      "nome": "Runa de Explosivo",
+      "dano_mod": "+3",
+      "mana_mod": "+3",
+      "conjuracao_mod": "+2",
+      "efeito": "Caso a magia tocar em algo físico ela irá fazer uma explosão"
+    },
+    {
+      "nome": "Runa de Múltiplo",
+      "dano_mod": "-",
+      "mana_mod": "+4",
+      "conjuracao_mod": "+3",
+      "efeito": "Multiplique a magia até 3, diminui o dano geral em 1 a cada multiplicação"
+    },
+    {
+      "nome": "Runa de Barreira",
+      "dano_mod": "+3",
+      "mana_mod": "+2",
+      "conjuracao_mod": "+2",
+      "efeito": "Crie uma Parede Mágica Defensiva a sua frente"
+    }
+  ]
+}

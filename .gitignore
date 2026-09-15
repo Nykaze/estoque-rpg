@@ -1,0 +1,49 @@
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Bundle gerado pelo esbuild (regenerável a partir de server.js)
+back/deploy-app.js
+
+# Dados locais reais — nunca versionar (produção e dev)
+back/data/*
+!back/data/.gitkeep
+
+# Fixtures de dados reais — substituir por exemplos sanitizados antes de versionar
+front/fixtures/*.json
+
+# Scripts legados de deploy com credenciais hardcoded
+back/deploy.ps1
+back/restart.ps1
+
+# Chaves SSH e segredos
+back/id_rsa
+back/id_rsa.pub
+*.pem
+*.key
+
+# Env
+.env
+.env.local
+.env.production
+
+# Editor / sistema operacional
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Config pessoal do autor
+.wezterm.lua

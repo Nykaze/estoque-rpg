@@ -1,0 +1,106 @@
+Manto do Campeão
+“Apenas campeões podem usar essa capa,
+e agora você é o novo portador”
+Peso: 2
+Valor: 150 Reil
+Efeito
++1 de dano, se ficar abaixo de 50% de hp
+ganhe +2 de dano ( não acumula com o
++1 anterior )
+Faixa do Lutador
+“Essa faixa é dada de seu mestre ao
+lutador que completou todo o seu
+treinamento e agora está pronto para
+seguir a sua jornada”
+Peso: 1
+Valor: 5 Reil
+Efeito
+Quando o Usuário desviar ele pode
+contra-atacar seu adversário com um
+golpe simples ( metade do que você tirar
+no dado ).
+Flechanel Retorcido
+“Um anel estranho com formato de flecha,
+arqueiros orgulhosos com otimas miras tem
+um desse entre seus dedos”
+Peso: 1
+Valor: 20 Reil
+Efeito
++1 de dano em flechas, +2 de pontaria.
+
+-- 1 of 6 --
+
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+
+-- 2 of 6 --
+
+Anel da Pedra de Fogo
+“Um anel dado a estudante da academia de
+Magia quando terminam seus estudo da
+Runa de 1° circulo “ Fogo “
+Peso: 1
+Valor: 18 Reil
+Efeito
++1 de dano em Magias que usam a Runa
+de Fogo como elemento principal
+Mascará Tribal
+“Uma mascará carregada por um tribo de
+goblins, essa tribo é conhecida por dominar
+a floresta de Kiah”
+Peso: 2
+Valor: 25 Reil
+Efeito
++2 de furtividade, enganas goblin burros
+Anel Escudo de Hasvel
+“Um Anel raro, usado por um guerreiro do
+passado que nunca caiu em batalha e
+caçava dragões - Hasvel, o Puro Aço”
+Peso: 6
+Valor: 120 Reil
+Efeito
++5 de Defesa
+
+-- 3 of 6 --
+
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+
+-- 4 of 6 --
+
+Bolsinha
+“Uma pequena bolsa usada para guarda
+itens pequenos ”
+Peso: 1
+Valor: 15 Reil
+Efeito
++5 de Espaço
+Medalhão Ambar
+“Feito de uma Pedra âmbar, esse anel
+carrega um pouco de vitalidade em sua
+essência, tê-lo por perto melhora a sua
+saude”
+Peso: 2
+Valor: 40 Reil
+Efeito
++5 de vida
+Emblema de Crolofih
+“Emblema bem ornamentado, quem o usa
+sente que consegue se esforçar um pouco
+mais, muitas pessoas o utilizam quando
+precisam fazer um trabalho pesado ”
+Peso: 1
+Valor: 15 Reil
+Efeito
++5 de Esforço
+
+-- 5 of 6 --
+
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+
+-- 6 of 6 --
+

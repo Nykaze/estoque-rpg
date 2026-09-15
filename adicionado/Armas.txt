@@ -1,0 +1,201 @@
+Manoplas de Prata
+Dano	1D4
+Crit	18
+Força08Agilidade
+08
+
+-- 1 of 27 --
+
+Lamina de Ferro
+Dano	1D6
+Crit	20
+Força14Agilidade
+12
+
+-- 2 of 27 --
+
+Dano	1D4Cauda Trançada
+Acerta até 3Q
+Crit	20
+Força07Agilidade
+18
+
+-- 3 of 27 --
+
+Ponta de FerroAcerta até 2QDano	1D7
+Crit	20
+Força16Agilidade
+13
+
+-- 4 of 27 --
+
+Dano	1D4Dente de Ferro
+Crit	16
+Força05Agilidade
+12
+
+-- 5 of 27 --
+
+Dano	1D8Placa Afiada
+Crit	20
+Força21Agilidade
+13
+
+-- 6 of 27 --
+
+Dano	1D5Florina
+Crit	18
+Força07Agilidade
+18
+
+-- 7 of 27 --
+
+Dano	1D7Taco Fervente
+Crit	19
+Força18Agilidade
+12
+Critico deixa queimando
+
+-- 8 of 27 --
+
+Dano	1D8Duo Hercules
+Crit	20
+Força22Agilidade
+16
+após quebrar a defesa, ela
+ganha +2 de dano.
+
+-- 9 of 27 --
+
+Dano1D12Claurita
+Crit	20
+Força32Agilidade
+18
+
+-- 10 of 27 --
+
+Dano	1d6Aço Traçado
+Crit	20
+Força14Agilidade
+21
+Acerta até 3Q
+
+-- 11 of 27 --
+
+Dano	1d5Escorpione
+Crit	17
+Força11Agilidade
+18
+Critico dá veneno
+
+-- 12 of 27 --
+
+Dano	1d6Rock’and’spike
+Crit	18
+Força15Agilidade
+20
+Dá +2 de dano caso
+defender
+
+-- 13 of 27 --
+
+Presa LaminadaDano	1D6
+Crit	19
+Força17Agilidade
+15
+Critico da 1 sangramento
+
+-- 14 of 27 --
+
+Dano	1d8Bald Lance
+Crit	20
+Força17Agilidade
+17
+
+-- 15 of 27 --
+
+Dano	1d9Breaker
+Crit	19
+Força23Agilidade
+16
+
+-- 16 of 27 --
+
+Dano	1D8Serra-Mandíbula
+Crit	20
+Força18Agilidade
+30
+Acerta até 3Q, Critico aplica
+3 sangramento
+
+-- 17 of 27 --
+
+Chifre PesadoDano1d10
+Crit	20
+Força28Agilidade
+15
+
+-- 18 of 27 --
+
+Defesa+9
+Brasão de Ferro-2 em desvio
+Força20Agilidade
+05
+
+-- 19 of 27 --
+
+Defesa+4
+Escudo Redondo
+Força12Agilidade
+05
+
+-- 20 of 27 --
+
+Besta SimplesAcerta até 5QDano+2
+Crit	18
+Força08Agilidade
+15
+
+-- 21 of 27 --
+
+Duplo-Besta	Acerta até 4Q, mas
+dispara 2 flechasDano+1
+Crit	20
+Força12Agilidade
+19
+
+-- 22 of 27 --
+
+Nota Longa	Dano+1
+Crit	20
+Força10Agilidade
+25
+Acerta até 9Q
+
+-- 23 of 27 --
+
+Arco Curto	Acerta até 9QDano+0
+Crit	18
+Força05Agilidade
+20
+
+-- 24 of 27 --
+
+Dano	1d2
+Flecha de FogoDeixa o alvo queimando
+( 1 d/dano )
+
+-- 25 of 27 --
+
+Dano	1d2
+Flecha de madeira
+
+-- 26 of 27 --
+
+Dano	1d4
+Flecha de Ferro
+Força12Agilidade
+08
+
+-- 27 of 27 --
+

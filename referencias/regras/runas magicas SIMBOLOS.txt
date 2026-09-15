@@ -1,0 +1,104 @@
+SIMBOLOSRuna de Terra	Runa de Terra	Runa de Terra
+
+-- 1 of 17 --
+
+SIMBOLOSRuna de Vento	Runa de Vento	Runa de Vento
+
+-- 2 of 17 --
+
+SIMBOLOSRuna de Madeira	Runa de Made
+ira
+Runa de Madeira
+
+-- 3 of 17 --
+
+SIMBOLOSRuna de Raio	Runa de Ra
+io
+Runa de Raio
+
+-- 4 of 17 --
+
+SIMBOLOSRuna de Gelo	Runa de Gelo	Runa de Gelo
+
+-- 5 of 17 --
+
+SIMBOLOSRuna de Fogo	Runa de Fogo	Runa de Fogo
+
+-- 6 of 17 --
+
+SIMBOLOSRuna de Água	Runa de Água	Runa de Água
+
+-- 7 of 17 --
+
+SIMBOLOS DE MODIFICAÇÃO - 1° SEMI-
+CIRCULO
+Runa de Pilar	Runa de P
+ilar
+Runa de Pilar
+
+-- 8 of 17 --
+
+SIMBOLOS DE MODIFICAÇÃO - 1° SEMI-
+CIRCULO
+Runa de Onda	Runa de Onda	Runa de Onda
+
+-- 9 of 17 --
+
+SIMBOLOS DE MODIFICAÇÃO - 1° SEMI-
+CIRCULO
+Runa de Feixe	Runa de Fe
+ixe
+Runa de Feixe
+
+-- 10 of 17 --
+
+SIMBOLOS DE MODIFICAÇÃO - 1° SEMI-
+CIRCULO
+Runa de Área	Runa de Área	Runa de Área
+
+-- 11 of 17 --
+
+SIMBOLOS DE MODIFICAÇÃO - 1° SEMI-
+CIRCULO
+Runa de Bola	Runa de Bola	Runa de Bola
+
+-- 12 of 17 --
+
+SIMBOLOS DE MODIFICAÇÃO - 2° SEMI-
+CIRCULO
+Runa de Espinho	Runa de Esp
+inho
+Runa de Espinho
+
+-- 13 of 17 --
+
+SIMBOLOS DE MODIFICAÇÃO - 2° SEMI-
+CIRCULO
+Runa de Multiplo	Runa de Mult
+iplo
+Runa de Multiplo
+
+-- 14 of 17 --
+
+SIMBOLOS DE MODIFICAÇÃO - 2° SEMI-
+CIRCULO
+Runa de Barreira	Runa de Barre
+ira
+Runa de Barreira
+
+-- 15 of 17 --
+
+SIMBOLOS DE MODIFICAÇÃO - 2° SEMI-
+CIRCULO
+Runa de Explosivo	Runa de Explos
+ivo
+Runa de Explosivo
+
+-- 16 of 17 --
+
+SIMBOLOS DE MODIFICAÇÃO - 2° SEMI-
+CIRCULO
+Runa de Ponto	Runa de Ponto	Runa de Ponto
+
+-- 17 of 17 --
+

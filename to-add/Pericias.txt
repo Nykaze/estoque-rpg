@@ -1,0 +1,18 @@
+ * (FOR & SAB) Intimidação 00
+ * (FOR & VIG) Resistência 00
+ * (FOR & INT) Mecânica 00
+ * (FOR & AGI) Luta 00
+ * (VIG & INF) Vontade 00
+ * (VIG & SAB) Sanidade 00
+ * (VIG & AGI) Atletismo 00
+ * (AGI & FOR) Movimentação 00
+ * (AGI & INT) Pontaria 00
+ * (AGI) Reflexo 00
+ * (INF & SAB) Música 00
+ * (INF) Comunicação 00
+ * (INF) Sedução 00
+ * (SAB) Conhecimento 00
+ * (INT & SAB) Magia 00
+ * (INT & INF) Percepção 00
+ * (SAB & VIG) Sobrevivência 00
+ * (INT & SAB) Conjuração 00

@@ -1,0 +1,104 @@
+{
+  "atributos": [
+    {
+      "pontos": 10,
+      "nivel": 1,
+      "forca": "+2 Espaço",
+      "vigor": "-",
+      "agilidade": "-",
+      "inteligencia": "+1 slot de runa",
+      "sabedoria": "+1 slot de runa",
+      "influencia": "-"
+    },
+    {
+      "pontos": 20,
+      "nivel": 2,
+      "forca": "+2 Espaço",
+      "vigor": "+2 HP",
+      "agilidade": "-",
+      "inteligencia": "-",
+      "sabedoria": "-",
+      "influencia": "-"
+    },
+    {
+      "pontos": 30,
+      "nivel": 3,
+      "forca": "+2 Espaço",
+      "vigor": "-",
+      "agilidade": "+1 AC Movimento",
+      "inteligencia": "+1 slot de runa",
+      "sabedoria": "+1 slot de runa",
+      "influencia": "+1 pericia qualquer"
+    },
+    {
+      "pontos": 40,
+      "nivel": 4,
+      "forca": "+2 Espaço",
+      "vigor": "+2 HP",
+      "agilidade": "-",
+      "inteligencia": "-",
+      "sabedoria": "-",
+      "influencia": "-"
+    },
+    {
+      "pontos": 50,
+      "nivel": 5,
+      "forca": "+2 Espaço, Armaduras Média não dão debuff de desvio",
+      "vigor": "-",
+      "agilidade": "-",
+      "inteligencia": "+1 slot de runa",
+      "sabedoria": "+1 slot de runa",
+      "influencia": "-"
+    },
+    {
+      "pontos": 60,
+      "nivel": 6,
+      "forca": "+2 Espaço",
+      "vigor": "+2 HP",
+      "agilidade": "+1 AC Movimento",
+      "inteligencia": "-",
+      "sabedoria": "-",
+      "influencia": "+1 pericia qualquer"
+    },
+    {
+      "pontos": 70,
+      "nivel": 7,
+      "forca": "+2 Espaço",
+      "vigor": "-",
+      "agilidade": "-",
+      "inteligencia": "+1 slot de runa",
+      "sabedoria": "+1 slot de runa",
+      "influencia": "-"
+    },
+    {
+      "pontos": 80,
+      "nivel": 8,
+      "forca": "+2 Espaço",
+      "vigor": "+2 HP",
+      "agilidade": "-",
+      "inteligencia": "-",
+      "sabedoria": "-",
+      "influencia": "-"
+    },
+    {
+      "pontos": 90,
+      "nivel": 9,
+      "forca": "+2 Espaço",
+      "vigor": "-",
+      "agilidade": "-",
+      "inteligencia": "-",
+      "sabedoria": "-",
+      "influencia": "-"
+    },
+    {
+      "pontos": 100,
+      "nivel": 10,
+      "forca": "+2 Espaço",
+      "vigor": "+2 HP",
+      "agilidade": "+1 AC Movimento",
+      "inteligencia": "+1 slot de runa",
+      "sabedoria": "+1 slot de runa",
+      "influencia": "+1 pericia qualquer"
+    }
+  ]
+}

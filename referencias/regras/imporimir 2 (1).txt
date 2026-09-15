@@ -1,0 +1,218 @@
+Poção de Mel Real“Um liquido Espeço, é mel, extremamente
+doce a um ponto que lhe faz sentir enjoou,
+não bebe nada após isso por pelo menos
+um bom tempo”
+Peso: 2
+Valor: 65 Reil
+Efeito
+Recupera +20 de VIDA
+Poção Azul da Lua“Uma bebida suspeitamente azul brilhante,
+bebe-la irá restaurar suas capacidades de
+mana até acima do que você é capaz de
+ter, um feito estranho”
+Peso: 2
+Valor: 80 Reil
+Efeito
+Recupera +30 de MANA
+Kit de Bandagens“Panos feitos e apropriados para tapar
+feridas e sangramentos, o correto é alguém
+usar em você nunca aplique eles sozinhos”
+Peso: 4
+Valor: 50 Reil
+Efeito
+Auto uso = -2 Acumulo de sangue
+Alguém usa = -5 Acumulo de sangue +2
+de Vida
+Baga Pexa“Um fruto que só floresce na floresta Deku,
+ela é conhecida por aliviar as dores
+causadas por envenenamento”
+Peso: 2
+Valor: 30 Reil
+Efeito
+-3 Acumulo de Veneno
+
+-- 1 of 10 --
+
+Poção de Mel Real“Um liquido Espeço, é mel, extremamente
+doce a um ponto que lhe faz sentir enjoou,
+não bebe nada após isso por pelo menos
+um bom tempo”
+Peso: 2
+Valor: 65 Reil
+Efeito
+Recupera +20 de VIDA
+Poção Azul da Lua“Uma bebida suspeitamente azul brilhante,
+bebe-la irá restaurar suas capacidades de
+mana até acima do que você é capaz de
+ter, um feito estranho”
+Peso: 2
+Valor: 80 Reil
+Efeito
+Recupera +30 de MANA
+Kit de Bandagens“Panos feitos e apropriados para tapar
+feridas e sangramentos, o correto é alguém
+usar em você nunca aplique eles sozinhos”
+Peso: 4
+Valor: 50 Reil
+Efeito
+Auto uso = -2 Acumulo de sangue
+Alguém usa = -5 Acumulo de sangue +2
+de Vida
+Baga Pexa“Um fruto que só floresce na floresta Deku,
+ela é conhecida por aliviar as dores
+causadas por envenenamento”
+Peso: 2
+Valor: 30 Reil
+Efeito
+-3 Acumulo de Veneno
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+
+-- 2 of 10 --
+
+Colar do Brasão“Um colar que influencia a potencia das magias
+de barreiras, Criada por um professor da
+academia de magia Tempest, temendo o estado
+dos alunos da escola ele criou esse colar”
+Peso: 2
+Valor: 60 Reil
+Efeito
++4 de vida para barreiras
+Manto Azure
+“Um Manto feito de fibras banhadas em
+pedra de mana, ao vesti-lo o usuário sente
+a mana dos fios sendo absorvidas pelo
+corpo”
+Peso: 2
+Valor: 115 Reil
+Efeito
++10 de mana, +1 de dano magico
+Anel do Acumulo
+“Um anel criado pelo Feiticeiro Centenário,
+ele confeccionou um item incrível, ele
+absorve qualquer acumulo escolhido pelo
+Usuário e solta qualquer ele quiser”
+Peso: 2
+Valor: 140 Reil
+Efeito
+Junta Acumulos vinculados ao usuário
+(Vida/Mana/Veneno/Sangramento)
+Maxímo de 12.
+
+-- 3 of 10 --
+
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+
+-- 4 of 10 --
+
+Anel do Olho Fixo
+“Um anel criado por um triste artesão que
+nunca teve a atenção de mulheres, ao forjar
+esse anel ele fica triste por não ter o efeito
+que ele esperava ”
+Peso: 2
+Valor: 50 Reil
+Efeito
+O alvo focará suas ações em você (+12
+em testes de vontade para sair do transe)
+Bracelete do Tutuba
+“Um bracelete que muda a formula das
+magias do elemento de Água para formas
+de tubarão”
+Peso: 3
+Valor: 70 Reil
+Efeito
++2 de efeito ( dano/vida )
+Máscara Surrupia
+“Como um lendário ninja já dizia - Mascara
+na cara, Ninja da quebrada, olha no meu
+olho que eu te meto a facada. ”
+Peso: 2
+Valor: 80 Reil
+Efeito
++2 de Furtividade, +1 de dano critico para
+armas do tipo “adaga”
+
+-- 5 of 10 --
+
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+
+-- 6 of 10 --
+
+Colar Magico Real
+“Usado por pessoas de alta classe, ele é
+capaz de proteger o usuário com um
+escudo magico, progetado por um antigo
+mago criador de artefatos”
+Peso: 2
+Valor: 110 Reil
+Efeito
+Vida = 6 | -8 de Mana.
+Bolsa de Exploração
+“O melhor equipamento para aqueles que
+querem se aventurar em busca de riqueza,
+fama e todo o que há de bom”
+Peso: 2
+Valor: 35 Reil
+Efeito
++12 de Espaço
+Anel da Pedra Eletrica
+“Um anel dado a estudante da academia de
+Magia quando terminam seus estudo da
+Runa de 1° circulo “ Raio “
+Peso: 1
+Valor: 18 Reil
+Efeito
++1 de dano em Magias que usam a Runa
+de Raio como elemento principal
+
+-- 7 of 10 --
+
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+
+-- 8 of 10 --
+
+Anel da Pedra De Gelo
+“Um anel dado a estudante da academia de
+Magia quando terminam seus estudo da
+Runa de 1° circulo “ Gelo “
+Peso: 1
+Valor: 18 Reil
+Efeito
++1 de dano em Magias que usam a Runa
+de Gelo como elemento principal
+Anel da Pedra Mística
+“Um anel criado por feiticeiros para
+potencializar seus feitiços, hà histórias que
+todo feiticeiro que estava na primeira guerra
+magica tinha um desse”
+Peso: 2
+Valor: 30 Reil
+Efeito
++1 de dano em Feitiços
+Medalhão Ambar
+“Feito de uma Pedra âmbar, esse anel
+carrega um pouco de vitalidade em sua
+essência, tê-lo por perto melhora a sua
+saude”
+Peso: 2
+Valor: 40 Reil
+Efeito
++5 de vida
+
+-- 9 of 10 --
+
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+Dice Guildy	Dice Guildy	Dice Guildy
+
+-- 10 of 10 --
+

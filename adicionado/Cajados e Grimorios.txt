@@ -1,0 +1,358 @@
+Cajado LaminadoDano	1d2
+Crit	20
+Inteligência
+04
+Sabedoria
+06
+
+-- 1 of 30 --
+
+Cajado do Olho
+de DragãoDano+3
+Crit	20
+Mas tem custo de +4 de mana
+Inteligência
+16
+Sabedoria
+10
+
+-- 2 of 30 --
+
+Cajado TemporalDano+2
+Crit	20
+Apenas para
+magias de Vento
+Inteligência
+18
+Sabedoria
+11
+
+-- 3 of 30 --
+
+Cajado ArvórioDano+2
+Crit	20
+Apenas para
+magias de Madeira
+Inteligência
+18
+Sabedoria
+10
+
+-- 4 of 30 --
+
+Cajado Geométrico
+Dano+0
+Crit	20
+Magias de Barreira tem +3 de
+Vida
+Inteligência
+20
+Sabedoria
+18
+
+-- 5 of 30 --
+
+Cajado Chamárito
+Dano+2
+Crit	20
+Apenas para
+magias de Fogo
+Inteligência
+15
+Sabedoria
+08
+
+-- 6 of 30 --
+
+Cajado da essência
+de DragãoDano+5
+Crit	20
+Mas tem custo de +8 de mana
+Inteligência
+23
+Sabedoria
+15
+
+-- 7 of 30 --
+
+Cajado Eletricante
+Dano+2
+Crit	20
+Apenas para
+magias de Raio
+Inteligência
+16
+Sabedoria
+09
+
+-- 8 of 30 --
+
+Cajado RochakaDano+2
+Crit	20
+Apenas para
+magias de Terra
+Inteligência
+20
+Sabedoria
+14
+
+-- 9 of 30 --
+
+Cajado da Amizade
+Dano+2
+Crit	20
+Usadas em aliados
+Inteligência
+19
+Sabedoria
+12
+
+-- 10 of 30 --
+
+Cajado da Gota
+Azure
+Dano+1
+Crit	20
+Inteligência
+08
+Sabedoria
+03
+
+-- 11 of 30 --
+
+Bastão do Dragão
+Dano+3
+Crit	20
+apenas em
+Dragões
+Inteligência
+24
+Sabedoria
+18
+
+-- 12 of 30 --
+
+Cajado BoludoDano+3
+Crit	20
+apenas para
+magia de bola
+Inteligência
+21
+Sabedoria
+14
+
+-- 13 of 30 --
+
+Cajado de Veldora
+Dano+3
+Crit	19
+Inteligência
+64
+Sabedoria
+45
+
+-- 14 of 30 --
+
+Cogujado Albino
+Dano+2
+Crit	20
+Apenas para
+magias de Água
+Inteligência
+17
+Sabedoria
+12
+
+-- 15 of 30 --
+
+Cajado LunetaDano+0
+Crit	20
+Magias tem +2 de alcance
+Inteligência
+12
+Sabedoria
+08
+
+-- 16 of 30 --
+
+Cajado PontudoDano	1d4
+Crit	20
+Inteligência
+05
+Sabedoria
+05
+
+-- 17 of 30 --
+
+Cajado CentradoDano+2
+Crit	20
+Inteligência
+16
+Sabedoria
+10
+
+-- 18 of 30 --
+
+Cajado Torto	Dano+0
+Crit	18
+Inteligência
+10
+Sabedoria
+10
+
+-- 19 of 30 --
+
+Cajado FrioDano+2
+Crit	20
+Apenas para
+magias de Gelo
+Inteligência
+14
+Sabedoria
+10
+
+-- 20 of 30 --
+
+Grimorio da Ordem
+Dano-
+Crit	20
+Inteligência
+11
+Sabedoria
+19
+Feitiços
+Complexos
+3
+Simples
+-
+
+-- 21 of 30 --
+
+Livro Preto
+FeitiçosDano+1
+Crit	20
+Inteligência
+08
+Sabedoria
+12
+Complexos
+1
+Simples
+4
+
+-- 22 of 30 --
+
+Grimorio Amarelo
+Dano+1
+Crit	20
+Inteligência
+12
+Sabedoria
+16
+Feitiços
+Complexos
+2
+Simples
+3
+
+-- 23 of 30 --
+
+Grimorio do lualDano+2
+Crit	20
+Inteligência
+10
+Sabedoria
+14
+Feitiços
+Complexos
+2
+Simples
+2
+
+-- 24 of 30 --
+
+Caderno de AlsDano-
+Crit	20
+Inteligência
+15
+Sabedoria
+20
+Feitiços
+Complexos
+3
+Simples
+2
+
+-- 25 of 30 --
+
+GemarinaDano+1
+Crit	18
+Inteligência
+13
+Sabedoria
+17
+Feitiços
+Complexos
+2
+Simples
+3
+
+-- 26 of 30 --
+
+VerdogrifoDano-
+Crit	20
+Inteligência
+12
+Sabedoria
+18
+Feitiços
+Complexos
+3
+Simples
+3
+
+-- 27 of 30 --
+
+Cadernaço da fruta
+Dano+1
+Crit	20
+Inteligência
+18
+Sabedoria
+23
+Feitiços
+Complexos
+3
+Simples
+1
+
+-- 28 of 30 --
+
+InvertáriaDano+2
+Crit	20
+Inteligência
+11
+Sabedoria
+15
+Feitiços
+Complexos
+1
+Simples
+5
+
+-- 29 of 30 --
+
+BeastrugoDano+1
+Crit	20
+Inteligência
+13
+Sabedoria
+17
+Feitiços
+Complexos
+3
+Simples
+2
+
+-- 30 of 30 --
+
