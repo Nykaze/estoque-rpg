@@ -431,4 +431,10 @@ Ideias detectadas no código e nas pastas de conteúdo:
 
 ---
 
+## 16. Licença e uso
+
+Este projeto está sob a **PolyForm NonCommercial 1.0.0** (ver `LICENSE`): o código é **source-available** — você pode ver, usar, modificar e distribuir para **fins não comerciais** (estudo, hobby, campanhas próprias, organizações sem fins comerciais). **Uso comercial** (vender, hospedar com cobrança, usar num negócio) **não é permitido** sob esta licença e exige acordo explícito com o autor.
+
+---
+
 *Documentação gerada a partir do código-fonte, documentos de regras e histórico de deploy. Última revisão: set/2026.*
