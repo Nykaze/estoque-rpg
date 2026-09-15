@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Backend deps
+        working-directory: back
+        run: npm ci
+
+      - name: Frontend deps
+        working-directory: front
+        run: npm ci
+
+      - name: Build server bundle (used by the tests)
+        working-directory: back
+        run: npx esbuild server.js --bundle --platform=node --format=cjs --outfile=deploy-app.js
+
+      - name: Backend syntax check
+        working-directory: back
+        run: node --check server.js
+
+      - name: Realtime smoke test
+        working-directory: back
+        run: node scripts/rt-test.cjs
+
+      - name: Equipment regression test
+        working-directory: back
+        run: node scripts/rt-equip-test.cjs
+
+      - name: Frontend type-check
+        working-directory: front
+        run: npm run check
+
+      - name: Frontend build
+        working-directory: front
+        run: npm run build

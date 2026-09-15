@@ -43,6 +43,7 @@ async function waitUp() {
 }
 
 (async () => {
+  let pass = false;
   try {
     await waitUp();
     const { io } = require('socket.io-client');
@@ -112,7 +113,7 @@ async function waitUp() {
 
     const realErrs = errs.filter((e) => !/Categoria incompatível/.test(e));
     console.log('erros nao-categoria:', JSON.stringify(realErrs));
-    const pass = okEscudo && eq().mao2 === null && eq().escudo === escudo().id && realErrs.length === 0;
+    pass = okEscudo && eq().mao2 === null && eq().escudo === escudo().id && realErrs.length === 0;
     console.log(pass ? 'EQUIP+ITEM OK' : 'EQUIP+ITEM FALHOU');
     a.close();
   } catch (e) {
@@ -120,6 +121,6 @@ async function waitUp() {
   } finally {
     child.kill();
     fs.rmSync(DIR, { recursive: true, force: true });
-    process.exit(0);
+    process.exit(pass ? 0 : 1);
   }
 })();

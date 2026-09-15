@@ -43,6 +43,7 @@ async function waitUp() {
 }
 
 (async () => {
+  let pass = false;
   try {
     await waitUp();
     const { io } = require('socket.io-client');
@@ -87,7 +88,8 @@ async function waitUp() {
     await sleep(900);
     const nb = bLast.characters[0];
     console.log('buffs DEFESA apos set:', nb.formulaBuffs && nb.formulaBuffs.DEFESA, '| broadcasts:', gotB, '| errs:', JSON.stringify(errs));
-    console.log(nb.formulaBuffs && nb.formulaBuffs.DEFESA === 7 && gotB >= 3 ? 'ACTION+RT OK' : 'ACTION+RT FALHOU');
+    pass = !!(nb && nb.formulaBuffs && nb.formulaBuffs.DEFESA === 7 && gotB >= 3);
+    console.log(pass ? 'ACTION+RT OK' : 'ACTION+RT FALHOU');
 
     a.close();
     b.close();
@@ -96,6 +98,6 @@ async function waitUp() {
   } finally {
     child.kill();
     fs.rmSync(DIR, { recursive: true, force: true });
-    process.exit(0);
+    process.exit(pass ? 0 : 1);
   }
 })();
