@@ -1,0 +1,32 @@
+{
+  "secret": "demo-secret-0123456789abcdef-NAO-USE-EM-PRODUCAO",
+  "users": [
+    {
+      "id": "u_admin",
+      "username": "admin",
+      "name": "Mestre Admin",
+      "role": "admin",
+      "active": true,
+      "passHash": "$2b$10$JbkEb1rdhhuBJne8cruxdemWALFTQyRbWnuK/exj6usGYQXVRws9G",
+      "createdAt": 1788533611065
+    },
+    {
+      "id": "u_gestor",
+      "username": "gestor",
+      "name": "Gestor Mesa",
+      "role": "gestor",
+      "active": true,
+      "passHash": "$2b$10$HYyjMkD7sKe0gcR3CRh/D.3U/0SWVEm7B4Q6FxnNaz6emlbKMI37O",
+      "createdAt": 1788533611065
+    },
+    {
+      "id": "u_jogador",
+      "username": "jogador",
+      "name": "Jogador",
+      "role": "jogador",
+      "active": true,
+      "passHash": "$2b$10$rrbpr0z1vb1AapGcc3nUguS2AHvBMH723txBhEJNxAqMSPLxqtMZu",
+      "createdAt": 1788533611065
+    }
+  ]
+}

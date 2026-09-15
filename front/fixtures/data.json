@@ -1,0 +1,1179 @@
+{
+  "settings": {
+    "systemName": "Estoque RPG"
+  },
+  "users": [],
+  "rpgs": [
+    {
+      "id": "4cs1niei",
+      "name": "Mesa de Exemplo",
+      "createdAt": 1788533611065,
+      "updatedAt": 1788533611065,
+      "schema": {
+        "attrs": [
+          {
+            "id": "vida",
+            "name": "VIDA",
+            "type": "number",
+            "min": 0,
+            "max": null,
+            "options": [],
+            "required": false,
+            "order": 0,
+            "active": true,
+            "desc": "Pontos de vida atuais",
+            "hasSub": false
+          },
+          {
+            "id": "mana",
+            "name": "MANA",
+            "type": "number",
+            "min": 0,
+            "max": null,
+            "options": [],
+            "required": false,
+            "order": 1,
+            "active": true,
+            "desc": "Pontos de mana atuais",
+            "hasSub": false
+          },
+          {
+            "id": "esforco",
+            "name": "ESFORÇO",
+            "type": "number",
+            "min": 0,
+            "max": null,
+            "options": [],
+            "required": false,
+            "order": 2,
+            "active": true,
+            "desc": "Pontos de esforço atuais",
+            "hasSub": false
+          },
+          {
+            "id": "forca",
+            "name": "Força",
+            "type": "level",
+            "min": 0,
+            "max": 100,
+            "options": [],
+            "required": false,
+            "order": 3,
+            "active": true,
+            "desc": "+2 Espaço por nível",
+            "hasSub": true
+          },
+          {
+            "id": "vigor",
+            "name": "Vigor",
+            "type": "level",
+            "min": 0,
+            "max": 100,
+            "options": [],
+            "required": false,
+            "order": 4,
+            "active": true,
+            "desc": "+2 HP por nível",
+            "hasSub": true
+          },
+          {
+            "id": "agilidade",
+            "name": "Agilidade",
+            "type": "level",
+            "min": 0,
+            "max": 100,
+            "options": [],
+            "required": false,
+            "order": 5,
+            "active": true,
+            "desc": "+1 AC Movimento",
+            "hasSub": true
+          },
+          {
+            "id": "inteligencia",
+            "name": "Inteligência",
+            "type": "level",
+            "min": 0,
+            "max": 100,
+            "options": [],
+            "required": false,
+            "order": 6,
+            "active": true,
+            "desc": "+1 slot de runa por nível (múltiplos de 10)",
+            "hasSub": true
+          },
+          {
+            "id": "sabedoria",
+            "name": "Sabedoria",
+            "type": "level",
+            "min": 0,
+            "max": 100,
+            "options": [],
+            "required": false,
+            "order": 7,
+            "active": true,
+            "desc": "+1 slot de runa por nível (múltiplos de 10)",
+            "hasSub": true
+          },
+          {
+            "id": "influencia",
+            "name": "Influência",
+            "type": "level",
+            "min": 0,
+            "max": 100,
+            "options": [],
+            "required": false,
+            "order": 8,
+            "active": true,
+            "desc": "+1 perícia por nível (múltiplos de 10)",
+            "hasSub": true
+          }
+        ],
+        "skills": [
+          {
+            "id": "intimidacao",
+            "name": "Intimidação",
+            "cat": "Combate",
+            "max": 5,
+            "desc": "(FOR & SAB)",
+            "active": true,
+            "order": 0
+          },
+          {
+            "id": "luta",
+            "name": "Luta",
+            "cat": "Combate",
+            "max": 5,
+            "desc": "(FOR & AGI)",
+            "active": true,
+            "order": 1
+          },
+          {
+            "id": "resistencia",
+            "name": "Resistência",
+            "cat": "Combate",
+            "max": 5,
+            "desc": "(FOR & VIG)",
+            "active": true,
+            "order": 2
+          },
+          {
+            "id": "atletismo",
+            "name": "Atletismo",
+            "cat": "Combate",
+            "max": 5,
+            "desc": "(VIG & AGI)",
+            "active": true,
+            "order": 3
+          },
+          {
+            "id": "movimentacao",
+            "name": "Movimentação",
+            "cat": "Combate",
+            "max": 5,
+            "desc": "(AGI & FOR)",
+            "active": true,
+            "order": 4
+          },
+          {
+            "id": "mecanica",
+            "name": "Mecânica",
+            "cat": "Saber",
+            "max": 5,
+            "desc": "(FOR & INT)",
+            "active": true,
+            "order": 5
+          },
+          {
+            "id": "pontaria",
+            "name": "Pontaria",
+            "cat": "Combate",
+            "max": 5,
+            "desc": "(AGI & INT)",
+            "active": true,
+            "order": 6
+          },
+          {
+            "id": "reflexo",
+            "name": "Reflexo",
+            "cat": "Combate",
+            "max": 5,
+            "desc": "(AGI)",
+            "active": true,
+            "order": 7
+          },
+          {
+            "id": "comunicacao",
+            "name": "Comunicação",
+            "cat": "Social",
+            "max": 5,
+            "desc": "(INF)",
+            "active": true,
+            "order": 8
+          },
+          {
+            "id": "seducao",
+            "name": "Sedução",
+            "cat": "Social",
+            "max": 5,
+            "desc": "(INF)",
+            "active": true,
+            "order": 9
+          },
+          {
+            "id": "musica",
+            "name": "Música",
+            "cat": "Social",
+            "max": 5,
+            "desc": "(INF & SAB)",
+            "active": true,
+            "order": 10
+          },
+          {
+            "id": "vontade",
+            "name": "Vontade",
+            "cat": "Mental",
+            "max": 5,
+            "desc": "(VIG & INF)",
+            "active": true,
+            "order": 11
+          },
+          {
+            "id": "sanidade",
+            "name": "Sanidade",
+            "cat": "Mental",
+            "max": 5,
+            "desc": "(VIG & SAB)",
+            "active": true,
+            "order": 12
+          },
+          {
+            "id": "conhecimento",
+            "name": "Conhecimento",
+            "cat": "Saber",
+            "max": 5,
+            "desc": "(SAB)",
+            "active": true,
+            "order": 13
+          },
+          {
+            "id": "magia",
+            "name": "Magia",
+            "cat": "Arcana",
+            "max": 5,
+            "desc": "(INT & SAB)",
+            "active": true,
+            "order": 14
+          },
+          {
+            "id": "conjuracao",
+            "name": "Conjuração",
+            "cat": "Arcana",
+            "max": 5,
+            "desc": "(INT & SAB)",
+            "active": true,
+            "order": 15
+          },
+          {
+            "id": "percepcao",
+            "name": "Percepção",
+            "cat": "Saber",
+            "max": 5,
+            "desc": "(INT & INF)",
+            "active": true,
+            "order": 16
+          },
+          {
+            "id": "sobrevivencia",
+            "name": "Sobrevivência",
+            "cat": "Saber",
+            "max": 5,
+            "desc": "(SAB & VIG)",
+            "active": true,
+            "order": 17
+          }
+        ],
+        "classes": [
+          {
+            "id": "uvdtxxk3",
+            "name": "Guerreiro",
+            "desc": "Linha de frente, foco em combate corpo a corpo."
+          },
+          {
+            "id": "dkmx4zeo",
+            "name": "Mago",
+            "desc": "Usuário de runas e magias elementais."
+          },
+          {
+            "id": "423ow5ro",
+            "name": "Arqueiro",
+            "desc": "Especialista em ataques à distância."
+          },
+          {
+            "id": "0qkfxh1n",
+            "name": "Ladino",
+            "desc": "Furtividade, precisão e golpes críticos."
+          }
+        ],
+        "sections": [
+          {
+            "id": "atributos",
+            "label": "Atributos",
+            "type": "builtin",
+            "enabled": true,
+            "col": "left"
+          },
+          {
+            "id": "pericias",
+            "label": "Perícias",
+            "type": "builtin",
+            "enabled": true,
+            "col": "left"
+          },
+          {
+            "id": "camposlivres",
+            "label": "Campos livres",
+            "type": "builtin",
+            "enabled": true,
+            "col": "left"
+          },
+          {
+            "id": "inventario",
+            "label": "Inventário",
+            "type": "builtin",
+            "enabled": true,
+            "col": "right"
+          },
+          {
+            "id": "equipamento",
+            "label": "Equipamento",
+            "type": "builtin",
+            "enabled": true,
+            "col": "right"
+          },
+          {
+            "id": "magias",
+            "label": "Magias & técnicas",
+            "type": "builtin",
+            "enabled": true,
+            "col": "right"
+          },
+          {
+            "id": "runas",
+            "label": "Runas",
+            "type": "builtin",
+            "enabled": true,
+            "col": "right"
+          },
+          {
+            "id": "anotacoes",
+            "label": "Anotações",
+            "type": "builtin",
+            "enabled": true,
+            "col": "right"
+          },
+          {
+            "id": "historico",
+            "label": "Histórico de itens",
+            "type": "builtin",
+            "enabled": true,
+            "col": "right"
+          }
+        ],
+        "rules": {
+          "subDivisor": 10
+        },
+        "classLabel": "Raças"
+      },
+      "catalog": [
+        {
+          "id": "09g68bm1",
+          "name": "Pocao de Cura",
+          "category": "consumivel",
+          "description": "Liquido avermelhado que restaura ferimentos leves.",
+          "weight": 2,
+          "value": 12,
+          "effect": "Recupera +7 de VIDA",
+          "stars": null
+        },
+        {
+          "id": "g2p4e3qg",
+          "name": "Pocao de Mana",
+          "category": "consumivel",
+          "description": "Bebida azulada que reabastece a energia arcana.",
+          "weight": 2,
+          "value": 15,
+          "effect": "Recupera +10 de MANA",
+          "stars": null
+        },
+        {
+          "id": "yxdnnmm8",
+          "name": "Pocao de Agilidade",
+          "category": "consumivel",
+          "description": "Essencia amarelada que deixa o corpo mais leve.",
+          "weight": 3,
+          "value": 20,
+          "effect": "+1 Ação de movimento (3 turnos)",
+          "stars": null
+        },
+        {
+          "id": "sm6jaol9",
+          "name": "Erva Revigorante",
+          "category": "consumivel",
+          "description": "Folhas que revigoram rapidamente o corpo.",
+          "weight": 1,
+          "value": 3,
+          "effect": "Recupera +3 de ESFORÇO",
+          "stars": null
+        },
+        {
+          "id": "1nmklpey",
+          "name": "Erva Mental",
+          "category": "consumivel",
+          "description": "Folhas que clareiam a mente e elevam a mana.",
+          "weight": 1,
+          "value": 4,
+          "effect": "Recupera +3 de MANA",
+          "stars": null
+        },
+        {
+          "id": "d6yol99y",
+          "name": "Erva Curativa",
+          "category": "consumivel",
+          "description": "Folhas que aliviam dores e fecham feridas.",
+          "weight": 1,
+          "value": 5,
+          "effect": "Recupera +3 de VIDA",
+          "stars": null
+        },
+        {
+          "id": "0ktnpayp",
+          "name": "Pocao de Cura Maior",
+          "category": "consumivel",
+          "description": "Liquido espesso e doce, mas muito eficaz.",
+          "weight": 2,
+          "value": 65,
+          "effect": "Recupera +20 de VIDA",
+          "stars": null
+        },
+        {
+          "id": "5vydwpcz",
+          "name": "Pocao de Mana Maior",
+          "category": "consumivel",
+          "description": "Bebida azul intensa, restaura grandes quantidades de mana.",
+          "weight": 2,
+          "value": 80,
+          "effect": "Recupera +30 de MANA",
+          "stars": null
+        },
+        {
+          "id": "2lmlowz0",
+          "name": "Pedra",
+          "category": "material",
+          "description": "Rocha comum.",
+          "weight": 3,
+          "value": 4,
+          "effect": "Ela e uma pedra.",
+          "stars": null
+        },
+        {
+          "id": "fs78mr60",
+          "name": "Ferro",
+          "category": "material",
+          "description": "Minerio usado para forjar equipamentos.",
+          "weight": 4,
+          "value": 20,
+          "effect": "Um minerio.",
+          "stars": null
+        },
+        {
+          "id": "8rcwn1yp",
+          "name": "Cobre",
+          "category": "material",
+          "description": "Minerio comum e maleavel.",
+          "weight": 5,
+          "value": 20,
+          "effect": "Um minerio.",
+          "stars": null
+        },
+        {
+          "id": "2ksp7umv",
+          "name": "Dente de Ferro",
+          "category": "arma",
+          "description": "Adaga serrilhada em formato de presa.",
+          "weight": 1,
+          "value": 25,
+          "effect": "Dano 1d4 · Crítico 16 · Req. FORÇA 05 / AGILIDADE 12",
+          "stars": null
+        },
+        {
+          "id": "i10f7gt0",
+          "name": "Lamina de Ferro",
+          "category": "arma",
+          "description": "Lamina de ferro simples e bem equilibrada.",
+          "weight": 2,
+          "value": 45,
+          "effect": "Dano 1d6 · Crítico 20 · Req. FORÇA 14 / AGILIDADE 12",
+          "stars": null
+        },
+        {
+          "id": "lv1a91i0",
+          "name": "Placa Afiada",
+          "category": "arma",
+          "description": "Pesada lamina cortante de placa metalica.",
+          "weight": 3,
+          "value": 60,
+          "effect": "Dano 1d8 · Crítico 20 · Req. FORÇA 21 / AGILIDADE 13",
+          "stars": null
+        },
+        {
+          "id": "2flxzw3p",
+          "name": "Taco de Madeira",
+          "category": "arma",
+          "description": "Bastao robusto de madeira endurecida.",
+          "weight": 2,
+          "value": 55,
+          "effect": "Dano 1d8 · Crítico 19 · Req. FORÇA 18 / AGILIDADE 12",
+          "stars": null
+        },
+        {
+          "id": "71cxgey4",
+          "name": "Adaga Venenosa",
+          "category": "arma",
+          "description": "Adaga com ferrão coberto de veneno.",
+          "weight": 1,
+          "value": 52,
+          "effect": "Dano 1d5 · Crítico 17 · Req. FORÇA 11 / AGILIDADE 18 · Crítico dá Veneno",
+          "stars": null
+        },
+        {
+          "id": "6chhp2xv",
+          "name": "Serra de Combate",
+          "category": "arma",
+          "description": "Arma serrilhada de longo alcance.",
+          "weight": 3,
+          "value": 85,
+          "effect": "Acerta até 3Q · Dano 1d8 · Crítico 20 · Req. FORÇA 18 / AGILIDADE 30 · Crítico aplica 3 Sangramento",
+          "stars": null
+        },
+        {
+          "id": "m6ofhk1j",
+          "name": "Arco Curto",
+          "category": "arma",
+          "description": "Arco curto agil, ideal para combate em movimento.",
+          "weight": 2,
+          "value": 35,
+          "effect": "Acerta até 9Q · Dano +0 · Crítico 18 · Req. FORÇA 05 / AGILIDADE 20",
+          "stars": null
+        },
+        {
+          "id": "2tn6514d",
+          "name": "Flecha de Fogo",
+          "category": "arma",
+          "description": "Munição encantada que incendeia o alvo.",
+          "weight": 0.2,
+          "value": 8,
+          "effect": "Dano 1d2 · Deixa o alvo Queimando (1 d/turno)",
+          "stars": null
+        },
+        {
+          "id": "56ts8531",
+          "name": "Flecha de Madeira",
+          "category": "arma",
+          "description": "Munição simples e barata.",
+          "weight": 0.2,
+          "value": 2,
+          "effect": "Dano 1d2",
+          "stars": null
+        },
+        {
+          "id": "m3905lji",
+          "name": "Escudo Redondo",
+          "category": "escudo",
+          "description": "Escudo redondo leve de madeira reforçada.",
+          "weight": 2,
+          "value": 40,
+          "effect": "Defesa +4 · Req. FORÇA 12 / AGILIDADE 05",
+          "stars": null
+        },
+        {
+          "id": "bddz1jfk",
+          "name": "Escudo de Ferro",
+          "category": "escudo",
+          "description": "Escudo pesado de ferro macico.",
+          "weight": 3,
+          "value": 95,
+          "effect": "Defesa +9 · -2 em Desvio · Req. FORÇA 20 / AGILIDADE 05",
+          "stars": null
+        },
+        {
+          "id": "ar72z7rw",
+          "name": "Traje de Conjurador",
+          "category": "armadura",
+          "description": "Armadura leve. Traje confortavel para conjuradores.",
+          "weight": 2,
+          "value": 28,
+          "effect": "Defesa +1d3",
+          "stars": null
+        },
+        {
+          "id": "u3mtd6v3",
+          "name": "Roupas de Explorador",
+          "category": "armadura",
+          "description": "Armadura leve. Vestimenta pratica para jornadas.",
+          "weight": 2,
+          "value": 30,
+          "effect": "Defesa +1d3",
+          "stars": null
+        },
+        {
+          "id": "4axexvd8",
+          "name": "Armadura Reforçada",
+          "category": "armadura",
+          "description": "Armadura leve. Placas parciais nos pontos vitais.",
+          "weight": 2,
+          "value": 42,
+          "effect": "Defesa +1d5",
+          "stars": null
+        },
+        {
+          "id": "p8q555pc",
+          "name": "Roupa Resistente",
+          "category": "armadura",
+          "description": "Armadura media. Costurada para quem nunca desiste.",
+          "weight": 3,
+          "value": 50,
+          "effect": "Defesa +1d7",
+          "stars": null
+        },
+        {
+          "id": "10ue28p2",
+          "name": "Armadura de Placa",
+          "category": "armadura",
+          "description": "Armadura pesada. Placas completas de aco.",
+          "weight": 5,
+          "value": 200,
+          "effect": "Defesa +1d25 · -3 em Desvio",
+          "stars": null
+        },
+        {
+          "id": "8w2rp566",
+          "name": "Cajado de Aprendiz",
+          "category": "cajado",
+          "description": "Cajado de madeira laminada para aprendizes.",
+          "weight": 2,
+          "value": 30,
+          "effect": "Dano 1d2 · Crítico 20 · Req. INTELIGÊNCIA 04 / SABEDORIA 06",
+          "stars": null
+        },
+        {
+          "id": "zu2abaae",
+          "name": "Cajado Arcano",
+          "category": "cajado",
+          "description": "Orbe de cristal no topo; custa mana para usar.",
+          "weight": 2,
+          "value": 90,
+          "effect": "Dano +3 · Crítico 20 · Custo de +4 de Mana · Req. INTELIGÊNCIA 16 / SABEDORIA 10",
+          "stars": null
+        },
+        {
+          "id": "w4ulkhnq",
+          "name": "Grimorio da Ordem",
+          "category": "grimorio",
+          "description": "Tomo oficial da Ordem Arcana, repleto de feitiços.",
+          "weight": 2,
+          "value": 120,
+          "effect": "Feitiços: 3 Complexos · Simples: — · Dano — · Crítico 20 · Req. INTELIGÊNCIA 11 / SABEDORIA 19",
+          "stars": null
+        },
+        {
+          "id": "gb5kngk8",
+          "name": "Grimorio de Cura",
+          "category": "grimorio",
+          "description": "Tomo focado em feitiços de restauração.",
+          "weight": 1,
+          "value": 90,
+          "effect": "Feitiços: 2 Complexos · Simples: — · Dano — · Crítico 20 · Req. INTELIGÊNCIA 09 / SABEDORIA 15",
+          "stars": null
+        },
+        {
+          "id": "dyqbm6k0",
+          "name": "Grimorio Elemental",
+          "category": "grimorio",
+          "description": "Compilado de feitiços das quatro formas elementais.",
+          "weight": 2,
+          "value": 110,
+          "effect": "Feitiços: 3 Complexos · Simples: — · Dano — · Crítico 20 · Req. INTELIGÊNCIA 12 / SABEDORIA 14",
+          "stars": null
+        },
+        {
+          "id": "yf0cub3e",
+          "name": "Colar da Sorte",
+          "category": "acessorio",
+          "description": "Colar feito a mao com um trevo de 4 folhas.",
+          "weight": 1,
+          "value": 15,
+          "effect": "+1 em Sorte, +Um Efeito de salvação",
+          "stars": null
+        },
+        {
+          "id": "ap5yb911",
+          "name": "Bolsa Pequena",
+          "category": "acessorio",
+          "description": "Pequena bolsa para guardar itens pequenos.",
+          "weight": 1,
+          "value": 15,
+          "effect": "+5 de Espaço",
+          "stars": null
+        },
+        {
+          "id": "padico8q",
+          "name": "Anel do Canalizador",
+          "category": "acessorio",
+          "description": "Anel que facilita sentir e guiar a mana.",
+          "weight": 2,
+          "value": 35,
+          "effect": "+5 de Mana",
+          "stars": null
+        },
+        {
+          "id": "5t17pylo",
+          "name": "Medalhão Vital",
+          "category": "acessorio",
+          "description": "Medalhão de pedra que carrega vitalidade.",
+          "weight": 2,
+          "value": 40,
+          "effect": "+5 de vida",
+          "stars": null
+        },
+        {
+          "id": "tsvdt3bk",
+          "name": "Mochila de Aventura",
+          "category": "acessorio",
+          "description": "Mochila espaçosa para longas expedições.",
+          "weight": 2,
+          "value": 35,
+          "effect": "+12 de Espaço",
+          "stars": null
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "copdjx1mn",
+      "rpgId": "4cs1niei",
+      "ownerId": "u_jogador",
+      "name": "Aria Flamejante",
+      "player": "Jogador Exemplo",
+      "ident": "001",
+      "status": "ativo",
+      "classId": "dkmx4zeo",
+      "photo": "",
+      "capacity": 14.5,
+      "attrVals": {
+        "vida": 32,
+        "mana": 24,
+        "esforco": 10,
+        "forca": 10,
+        "forca:sub": 0,
+        "vigor": 20,
+        "vigor:sub": 0,
+        "agilidade": 20,
+        "agilidade:sub": 0,
+        "inteligencia": 60,
+        "inteligencia:sub": 0,
+        "sabedoria": 40,
+        "sabedoria:sub": 0,
+        "influencia": 10,
+        "influencia:sub": 0
+      },
+      "skillVals": {
+        "intimidacao": 0,
+        "luta": 0,
+        "resistencia": 0,
+        "atletismo": 0,
+        "movimentacao": 0,
+        "mecanica": 0,
+        "pontaria": 0,
+        "reflexo": 0,
+        "comunicacao": 1,
+        "seducao": 0,
+        "musica": 0,
+        "vontade": 2,
+        "sanidade": 1,
+        "conhecimento": 3,
+        "magia": 4,
+        "conjuracao": 3,
+        "percepcao": 2,
+        "sobrevivencia": 0
+      },
+      "customAttrs": [],
+      "customSections": {},
+      "spells": [],
+      "runes": [],
+      "inventory": [
+        {
+          "id": "i6oif1mkm",
+          "movId": "mmarkw6sk",
+          "src": "w4ulkhnq",
+          "name": "Grimorio da Ordem",
+          "qty": 1,
+          "perSlot": 0.5,
+          "effect": "Feitiços: 3 Complexos · Simples: — · Dano — · Crítico 20 · Req. INTELIGÊNCIA 11 / SABEDORIA 19"
+        },
+        {
+          "id": "i74vekwbo",
+          "movId": "mzm3aqeer",
+          "src": "09g68bm1",
+          "name": "Pocao de Cura",
+          "qty": 4,
+          "perSlot": 0.5,
+          "effect": "Recupera +7 de VIDA"
+        },
+        {
+          "id": "iydukn931",
+          "movId": "ml4mwd9dx",
+          "src": "g2p4e3qg",
+          "name": "Pocao de Mana",
+          "qty": 2,
+          "perSlot": 0.5,
+          "effect": "Recupera +10 de MANA"
+        },
+        {
+          "id": "iw1kwq0vn",
+          "movId": "m7zzi7udq",
+          "src": "sm6jaol9",
+          "name": "Erva Revigorante",
+          "qty": 5,
+          "perSlot": 1,
+          "effect": "Recupera +3 de ESFORÇO"
+        }
+      ],
+      "equipment": {
+        "mao1": null,
+        "mao2": null,
+        "escudo": null,
+        "grimorio": null,
+        "armadura": null
+      },
+      "cash": 1280,
+      "skillPointsExtra": 0,
+      "notes": "Aventureira inexperiente em busca do Tomo Perdido.",
+      "createdAt": 1788453611065,
+      "updatedAt": 1788453611065,
+      "attributes": [],
+      "isMonster": false,
+      "monster": {
+        "desafio": "",
+        "tipo": "",
+        "habitat": ""
+      }
+    },
+    {
+      "id": "cly1sslkk",
+      "rpgId": "4cs1niei",
+      "ownerId": null,
+      "name": "Touro de Aço",
+      "player": "",
+      "ident": "002",
+      "status": "ativo",
+      "classId": "uvdtxxk3",
+      "photo": "",
+      "capacity": 17,
+      "attrVals": {
+        "vida": 44,
+        "mana": 6,
+        "esforco": 18,
+        "forca": 60,
+        "forca:sub": 0,
+        "vigor": 70,
+        "vigor:sub": 0,
+        "agilidade": 20,
+        "agilidade:sub": 0,
+        "inteligencia": 10,
+        "inteligencia:sub": 0,
+        "sabedoria": 10,
+        "sabedoria:sub": 0,
+        "influencia": 10,
+        "influencia:sub": 0
+      },
+      "skillVals": {
+        "intimidacao": 3,
+        "luta": 4,
+        "resistencia": 5,
+        "atletismo": 4,
+        "movimentacao": 2,
+        "mecanica": 0,
+        "pontaria": 0,
+        "reflexo": 0,
+        "comunicacao": 0,
+        "seducao": 0,
+        "musica": 0,
+        "vontade": 3,
+        "sanidade": 0,
+        "conhecimento": 0,
+        "magia": 0,
+        "conjuracao": 0,
+        "percepcao": 0,
+        "sobrevivencia": 0
+      },
+      "customAttrs": [],
+      "customSections": {},
+      "spells": [],
+      "runes": [],
+      "inventory": [
+        {
+          "id": "ioq3g4er6",
+          "movId": "m2ei9v41p",
+          "src": "i10f7gt0",
+          "name": "Lamina de Ferro",
+          "qty": 1,
+          "perSlot": 0.5,
+          "effect": "Dano 1d6 · Crítico 20 · Req. FORÇA 14 / AGILIDADE 12"
+        },
+        {
+          "id": "i5y38ggn4",
+          "movId": "mw3e5n8r1",
+          "src": "0ktnpayp",
+          "name": "Pocao de Cura Maior",
+          "qty": 3,
+          "perSlot": 0.5,
+          "effect": "Recupera +20 de VIDA"
+        },
+        {
+          "id": "ildsmhyoh",
+          "movId": "mri28r2hd",
+          "src": "d6yol99y",
+          "name": "Erva Curativa",
+          "qty": 6,
+          "perSlot": 1,
+          "effect": "Recupera +3 de VIDA"
+        }
+      ],
+      "equipment": {
+        "mao1": null,
+        "mao2": null,
+        "escudo": null,
+        "grimorio": null,
+        "armadura": null
+      },
+      "cash": 340,
+      "skillPointsExtra": 0,
+      "notes": "Mercenario de estrada, paga em ouro e encrenca.",
+      "createdAt": 1788453611065,
+      "updatedAt": 1788453611065,
+      "attributes": [],
+      "isMonster": false,
+      "monster": {
+        "desafio": "",
+        "tipo": "",
+        "habitat": ""
+      }
+    },
+    {
+      "id": "cw9yhuglh",
+      "rpgId": "4cs1niei",
+      "ownerId": null,
+      "name": "Velka Entrepassos",
+      "player": "",
+      "ident": "003",
+      "status": "ativo",
+      "classId": "423ow5ro",
+      "photo": "",
+      "capacity": 15,
+      "attrVals": {
+        "vida": 28,
+        "mana": 8,
+        "esforco": 14,
+        "forca": 20,
+        "forca:sub": 0,
+        "vigor": 30,
+        "vigor:sub": 0,
+        "agilidade": 80,
+        "agilidade:sub": 0,
+        "inteligencia": 20,
+        "inteligencia:sub": 0,
+        "sabedoria": 30,
+        "sabedoria:sub": 0,
+        "influencia": 10,
+        "influencia:sub": 0
+      },
+      "skillVals": {
+        "intimidacao": 0,
+        "luta": 0,
+        "resistencia": 0,
+        "atletismo": 0,
+        "movimentacao": 3,
+        "mecanica": 0,
+        "pontaria": 5,
+        "reflexo": 4,
+        "comunicacao": 2,
+        "seducao": 0,
+        "musica": 0,
+        "vontade": 0,
+        "sanidade": 0,
+        "conhecimento": 0,
+        "magia": 0,
+        "conjuracao": 0,
+        "percepcao": 4,
+        "sobrevivencia": 3
+      },
+      "customAttrs": [],
+      "customSections": {},
+      "spells": [],
+      "runes": [],
+      "inventory": [
+        {
+          "id": "ilqr7bvrz",
+          "movId": "mpl87xbti",
+          "src": "lv1a91i0",
+          "name": "Placa Afiada",
+          "qty": 1,
+          "perSlot": 0.33,
+          "effect": "Dano 1d8 · Crítico 20 · Req. FORÇA 21 / AGILIDADE 13"
+        },
+        {
+          "id": "iu7mhlumu",
+          "movId": "m0rtoya44",
+          "src": "1nmklpey",
+          "name": "Erva Mental",
+          "qty": 4,
+          "perSlot": 1,
+          "effect": "Recupera +3 de MANA"
+        },
+        {
+          "id": "izip8y8gt",
+          "movId": "mjt7kesp7",
+          "src": "09g68bm1",
+          "name": "Pocao de Cura",
+          "qty": 2,
+          "perSlot": 0.5,
+          "effect": "Recupera +7 de VIDA"
+        },
+        {
+          "id": "i5siwh5uq",
+          "movId": "m5o459rv6",
+          "src": "5vydwpcz",
+          "name": "Pocao de Mana Maior",
+          "qty": 2,
+          "perSlot": 0.5,
+          "effect": "Recupera +30 de MANA"
+        }
+      ],
+      "equipment": {
+        "mao1": null,
+        "mao2": null,
+        "escudo": null,
+        "grimorio": null,
+        "armadura": null
+      },
+      "cash": 590,
+      "skillPointsExtra": 0,
+      "notes": "Atecadora de longa distância, olho firme e mao quieta.",
+      "createdAt": 1788453611065,
+      "updatedAt": 1788453611065,
+      "attributes": [],
+      "isMonster": false,
+      "monster": {
+        "desafio": "",
+        "tipo": "",
+        "habitat": ""
+      }
+    },
+    {
+      "id": "c3hsqd6v7",
+      "rpgId": "4cs1niei",
+      "ownerId": null,
+      "name": "Sombra Noturna",
+      "player": "",
+      "ident": "004",
+      "status": "ativo",
+      "classId": "0qkfxh1n",
+      "photo": "",
+      "capacity": 15,
+      "attrVals": {
+        "vida": 30,
+        "mana": 10,
+        "esforco": 12,
+        "forca": 20,
+        "forca:sub": 0,
+        "vigor": 40,
+        "vigor:sub": 0,
+        "agilidade": 60,
+        "agilidade:sub": 0,
+        "inteligencia": 30,
+        "inteligencia:sub": 0,
+        "sabedoria": 30,
+        "sabedoria:sub": 0,
+        "influencia": 20,
+        "influencia:sub": 0
+      },
+      "skillVals": {
+        "intimidacao": 0,
+        "luta": 0,
+        "resistencia": 0,
+        "atletismo": 0,
+        "movimentacao": 5,
+        "mecanica": 0,
+        "pontaria": 0,
+        "reflexo": 4,
+        "comunicacao": 3,
+        "seducao": 3,
+        "musica": 0,
+        "vontade": 0,
+        "sanidade": 0,
+        "conhecimento": 0,
+        "magia": 0,
+        "conjuracao": 0,
+        "percepcao": 3,
+        "sobrevivencia": 2
+      },
+      "customAttrs": [],
+      "customSections": {},
+      "spells": [],
+      "runes": [],
+      "inventory": [
+        {
+          "id": "iuk05q21c",
+          "movId": "m80d94ai3",
+          "src": "2flxzw3p",
+          "name": "Taco de Madeira",
+          "qty": 1,
+          "perSlot": 0.5,
+          "effect": "Dano 1d8 · Crítico 19 · Req. FORÇA 18 / AGILIDADE 12"
+        },
+        {
+          "id": "ikv613f2p",
+          "movId": "mwkcuixn8",
+          "src": "yxdnnmm8",
+          "name": "Pocao de Agilidade",
+          "qty": 3,
+          "perSlot": 0.33,
+          "effect": "+1 Ação de movimento (3 turnos)"
+        }
+      ],
+      "equipment": {
+        "mao1": null,
+        "mao2": null,
+        "escudo": null,
+        "grimorio": null,
+        "armadura": null
+      },
+      "cash": 2590,
+      "skillPointsExtra": 0,
+      "notes": "Passos silenciosos, origens desconhecidas.",
+      "createdAt": 1788453611065,
+      "updatedAt": 1788453611065,
+      "attributes": [],
+      "isMonster": false,
+      "monster": {
+        "desafio": "",
+        "tipo": "",
+        "habitat": ""
+      }
+    }
+  ],
+  "movements": [],
+  "version": 3
+}

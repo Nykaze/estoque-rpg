@@ -19,8 +19,7 @@ back/deploy-app.js
 back/data/*
 !back/data/.gitkeep
 
-# Fixtures de dados reais — substituir por exemplos sanitizados antes de versionar
-front/fixtures/*.json
+# (front/fixtures) contêm apenas dados de exemplo sanitizados e são versionados
 
 # Scripts legados de deploy com credenciais hardcoded
 back/deploy.ps1

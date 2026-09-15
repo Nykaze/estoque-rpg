@@ -366,6 +366,8 @@ npm run build          # generates dist/ → copy to public/
 
 Data: without `data.json`/`users.json`, the server creates them blank on first run (`loadState`). For full gameplay, use a seeded `users.json` (`back/scripts/seed-users.js`) and optionally a campaign `data.json`.
 
+Sample data (committed in `front/fixtures/`): a `data.json` with the "Mesa de Exemplo" table (fictional characters) and a `users.json` with demo credentials — `admin/admin123`, `gestor/gestor123`, `jogador/jogador123`. To run the dev backend over the fixtures: `PORT=3001 DATA_FILE=front/fixtures/data.json USERS_FILE=front/fixtures/users.json node back/server.js` (or use `front/run-backend.cjs`). To populate test characters: `node front/seed-test-chars.cjs`.
+
 `front/vite.config.ts` defines a proxy for `/api` and `/socket.io` (with `ws: true`) pointing to `http://localhost:3001` — in short, for full development run the server on port **3001** (`PORT=3001 node server.js` in `back/`) and Vite in parallel on port 5173.
 
 ---
